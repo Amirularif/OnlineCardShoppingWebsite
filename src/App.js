@@ -2,15 +2,21 @@ import React from 'react';
 import Header from './header';
 import Card from './card';
 import './styles.css'; 
+import charizardvmax from './images/charizardvmax.png'
+import zapdos from './images/galarianbird.png'
+import mew from './images/mew.png'
+import pikachu from './images/pikachu.png'
+import arceusv from './images/arceusv.png'
+import umbreonvmax from './images/umbreonvmax.png'
 
 const cardsData = [
   // Data for 5 cards
-  { name: 'Charizard VMAX', description: 'Sword and Shield', stock: 10, price: 5.99, image: './images/charizardvmax.png'},
-  { name: 'Zapdos AR', description: 'Sword and Shield', stock: 8, price: 7.99, image: './images/galarianbird.png'},
-  { name: 'Mew', description: 'Sword and Shield', stock: 10, price: 5.99, image: './images/mew.png'},
-  { name: 'Pikachu', description: 'Sword and Shield', stock: 8, price: 7.99, image: './images/pikachu.png'},
-  { name: 'Arceus V', description: 'Sword and Shield', stock: 10, price: 5.99, image: './images/arceusv.png'},
-  { name: 'Umbreon VMAX', description: 'Sword and Shield', stock: 8, price: 7.99, image: './images/umbreonvmax.png'},
+  { name: 'Charizard VMAX', description: 'Sword and Shield', stock: 10, price: 5.99, image: charizardvmax},
+  { name: 'Zapdos AR', description: 'Sword and Shield', stock: 8, price: 7.99, image: zapdos},
+  { name: 'Mew', description: 'Sword and Shield', stock: 10, price: 5.99, image: mew},
+  { name: 'Pikachu', description: 'Sword and Shield', stock: 8, price: 7.99, image: pikachu},
+  { name: 'Arceus V', description: 'Sword and Shield', stock: 10, price: 5.99, image: arceusv},
+  { name: 'Umbreon VMAX', description: 'Sword and Shield', stock: 8, price: 7.99, image: umbreonvmax},
   
 ];
 
@@ -31,8 +37,8 @@ function App() {
             description={card.description}
             stock={card.stock}
             price={card.price}
-            onAddToCart={handleAddToCart}
             image={card.image}
+            onAddToCart={handleAddToCart}
           />
         ))}
       </div>
