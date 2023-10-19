@@ -13,6 +13,9 @@ function Header() {
       <div className="menu-container">
         <div className="menu-item">Singles card</div>
         <div className="menu-item">Graded cards</div>
+        <div className="menu-item">Booster boxes</div>
+        <div className="menu-item">Mystery packs</div>
+        <div className="menu-item">Contact</div>
       </div>
     </div>
   );
