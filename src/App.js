@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import Header from './header';
 import Card from './card';
 import Autobiography from './autobioheader';
@@ -22,11 +22,6 @@ const cardsData = [
 ];
 
 function App() {
-  const [searchTerm,setSearchTerm] = useState('');
-
-  const filteredCards = cardsData.filter((card) =>
-  card.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
 
   const handleAddToCart = () => {
     console.log('Added to cart!');
@@ -34,24 +29,20 @@ function App() {
 
   return (
     <div className="App">
-      <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm}  />
+      <Header />
       <Autobiography/>
       <div className="card-container">
-      {filteredCards.length > 0 ? (
-          filteredCards.map((card, index) => (
-            <Card
-              key={index}
-              name={card.name}
-              description={card.description}
-              stock={card.stock}
-              price={card.price}
-              image={card.image}
-              onAddToCart={handleAddToCart}
-            />
-          ))
-        ) : (
-          <div className="no-result">No result</div>
-        )}
+        {cardsData.map((card, index) => (
+          <Card
+            key={index}
+            name={card.name}
+            description={card.description}
+            stock={card.stock}
+            price={card.price}
+            image={card.image}
+            onAddToCart={handleAddToCart}
+          />
+        ))}
       </div>
     </div>
   );

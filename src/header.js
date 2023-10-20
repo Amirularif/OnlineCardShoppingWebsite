@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './images/headerlogo.png';
 
-function Header(searchTerm,setSearchTerm) {
+function Header() {
   return (
     <div className="header">
       <div className='logo-container'>
@@ -18,7 +18,7 @@ function Header(searchTerm,setSearchTerm) {
         <div className="menu-item">Contact</div>
       </div>
       <div className="search-bar">
-        <input type="text" placeholder="Search..." value={searchTerm} onChange={(e)=>setSearchTerm(e.target.value)} />
+        <input type="text" placeholder="Search..."/>
         <button type="submit">Search</button>
       </div>
     </div>

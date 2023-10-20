@@ -125,13 +125,6 @@ body {
     height: 298px;
     object-fit: cover;
 }
-
-.no-result {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 18px;
-    color: #888;
-}
   
 button {
     background-color: #4CAF50;
