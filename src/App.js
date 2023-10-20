@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './header';
 import Card from './card';
+import Autobiography from './autobioheader';
 import './styles.css'; 
 import charizardvmax from './images/charizardvmax.png'
 import zapdos from './images/galarianbird.png'
@@ -29,6 +30,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Autobiography/>
       <div className="card-container">
         {cardsData.map((card, index) => (
           <Card

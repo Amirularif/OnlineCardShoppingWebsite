@@ -55,7 +55,57 @@ body {
     margin-right: 20px;
     cursor: pointer;
 }
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: 10px; 
+  }
   
+  .search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .search-bar button {
+    background-color: #735E59;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+ 
+.autobiography-section {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #735E59;
+}
+
+.autobiography-text {
+    width: 50%;
+    text-align: left;
+    margin-left: 30px;
+    font-family: 'TTBackward';
+    font-size: 50px;
+}
+  
+.autobiography-image img {
+    margin-right: 100px;
+    margin-top: 15px;
+    width: 350px; 
+    height: auto;
+}
+
 .card-container {
     display: flex;
     justify-content: space-around;
@@ -65,14 +115,14 @@ body {
   
 .card {
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
     text-align: center;
 }
   
 .card-image {
-    width: 150px;
-    height: 200px;
+    width: 210px;
+    height: 298px;
     object-fit: cover;
 }
   
@@ -86,5 +136,5 @@ button {
 }
   
 button:hover {
-    background-color: #45a049;
+    background-color: #4c3e3a;
 }

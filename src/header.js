@@ -17,6 +17,10 @@ function Header() {
         <div className="menu-item">Mystery packs</div>
         <div className="menu-item">Contact</div>
       </div>
+      <div className="search-bar">
+        <input type="text" placeholder="Search..." />
+        <button type="submit">Search</button>
+      </div>
     </div>
   );
 }
