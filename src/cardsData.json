@@ -1,4 +1,3 @@
-
 [
     { 
         "name": "Charizard VMAX", 
@@ -41,5 +40,13 @@
         "stock": 8, 
         "price": 7.99, 
         "image": "./images/umbreonvmax.png"
+    },
+    { 
+        "name": "Charizard V", 
+        "description": "Sword and Shield", 
+        "stock": 2, 
+        "price": 17.99, 
+        "image": "./images/charizardv.jpeg"
     }
+    
 ]

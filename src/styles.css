@@ -108,9 +108,10 @@ body {
 
 .card-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
     padding: 20px;
+    margin-left: 130px;
 }
   
 .card {
