@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './images/headerlogo.png';
 
-function Header() {
+function Header({ onSearch }) {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearch = () => {
+    onSearch(searchTerm);
+  };
+
   return (
     <div className="header">
       <div className='logo-container'>
@@ -17,9 +23,16 @@ function Header() {
         <div className="menu-item">Mystery packs</div>
         <div className="menu-item">Contact</div>
       </div>
-      <div className="search-bar">
-        <input type="text" placeholder="Search..."/>
-        <button type="submit">Search</button>
+       <div className="search-bar">
+        <input
+          type="text"
+          placeholder="Search..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <button type="submit" onClick={handleSearch}>
+          Search
+        </button>
       </div>
     </div>
   );
