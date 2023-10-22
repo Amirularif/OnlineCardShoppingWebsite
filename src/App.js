@@ -7,13 +7,13 @@ import cardsData from './cardsData.json'
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [filteredCard, setFilteredCard] = useState(null);
+  const [filteredCard, setFilteredCard] = useState([]);
 
   const handleSearch = (term) => {
-    const foundCard = cardsData.find(
-      (card) => card.name.toLowerCase() === term.toLowerCase()
+    const foundCards = cardsData.filter(
+      (card) => card.name.toLowerCase().startsWith(term.toLowerCase())
     );
-    setFilteredCard(foundCard);
+    setFilteredCard(foundCards);
     setSearchTerm(term);
   };
 
@@ -26,22 +26,24 @@ function App() {
       <Header onSearch={handleSearch} />
       <Autobiography />
       <div className="card-container">
-        {filteredCard ? (
-          <Card
-            key={filteredCard.name}
-            name={filteredCard.name}
-            description={filteredCard.description}
-            stock={filteredCard.stock}
-            price={filteredCard.price}
-            image={filteredCard.image}
-            onAddToCart={handleAddToCart}
-          />
+        {filteredCard.length > 0 ? (
+          filteredCard.map((card, index) => (
+            <Card
+              key={index} // Use a unique ID if available, like card.id
+              name={card.name}
+              description={card.description}
+              stock={card.stock}
+              price={card.price}
+              image={card.image}
+              onAddToCart={handleAddToCart}
+            />
+          ))
         ) : searchTerm ? (
           <div className="no-result">No result</div>
         ) : (
-          cardsData.map((card) => (
+          cardsData.map((card, index) => (
             <Card
-              key={card.name}
+              key={index} // Use a unique ID if available, like card.id
               name={card.name}
               description={card.description}
               stock={card.stock}
