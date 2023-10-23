@@ -3,12 +3,23 @@ import './styles.css';
 import bioimg from './images/try1.png'
 
 function Autobiography() {
-  const autobiographyText = "Thank you for visiting our store. This is just for fun . Lorem ipsum dolor sit amet. Thank you for visiting our store. This is just for fun . Lorem ipsum dolor sit amet.";  
+  const welcomeText = "Welcome";  
+  const descriptionText = "We are currently making some improvements to our website! We sell Pokemon cards including graded, singles and even Booster boxes";
+  const codeText = "USE CODE : A55FGTTK7";
 
   return (
     <div className="autobiography-section">
       <div className="autobiography-text">
-        {autobiographyText}
+        <div className="autobio-header">
+          {welcomeText}
+        </div>
+        <div className="autobio-description">
+          {descriptionText}
+        </div>
+        <div className="autobio-code">
+          {codeText}
+        </div>
+        
       </div>
       <div className="autobiography-image">
         <img src={bioimg} alt='biographyimage' />

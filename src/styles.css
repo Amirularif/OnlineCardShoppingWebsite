@@ -92,17 +92,41 @@ body {
 }
 
 .autobiography-text {
-    width: 50%;
-    text-align: left;
-    margin-left: 30px;
-    font-family: 'TTBackward';
-    font-size: 50px;
+    width: 40%;
+    text-align: center;
+    margin-left: 170px;
+}
+
+.autobio-header{
+    font-size: 60px;
+    color: #4c3e3a;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #4c3e3a;
+}
+
+.autobio-description{
+    color: #4c3e3a;
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.autobio-code{
+    font-family: "TTBackward";
+    font-size: 60px;
+    font-weight: bold;
+    color: #4c3e3a;
+    margin-top: 40px;
 }
   
 .autobiography-image img {
-    margin-right: 110px;
-    margin-top: 15px;
-    width: 500px; 
+    margin-right: 170px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 520px; 
     height: auto;
 }
 
