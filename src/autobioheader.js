@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css'; 
-import bioimg from './images/biographyimage.png'
+import bioimg from './images/try1.png'
 
 function Autobiography() {
   const autobiographyText = "Thank you for visiting our store. This is just for fun . Lorem ipsum dolor sit amet. Thank you for visiting our store. This is just for fun . Lorem ipsum dolor sit amet.";  
