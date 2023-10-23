@@ -4,6 +4,16 @@
     src: url('./fonts/ttbackward.otf') format('truetype'); 
 }
 
+@font-face {
+    font-family: 'Klandestin';
+    src: url('./fonts/klandestin.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TTCommonPro';
+    src: url('./fonts/ttcommonpro.otf') format('truetype');
+}
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -98,14 +108,15 @@ body {
 }
 
 .autobio-header{
+    font-family: "Wanoquin";
     font-size: 60px;
     color: #4c3e3a;
-    margin-bottom: 20px;
-    padding: 10px;
+    padding: 5px;
     border-bottom: 1px solid #4c3e3a;
 }
 
 .autobio-description{
+    font-family: "TTCommonPro";
     color: #4c3e3a;
     margin-top: 20px;
     padding-left: 40px;
@@ -116,7 +127,7 @@ body {
 
 .autobio-code{
     font-family: "TTBackward";
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
     color: #4c3e3a;
     margin-top: 40px;

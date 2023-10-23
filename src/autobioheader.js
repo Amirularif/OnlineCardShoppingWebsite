@@ -4,7 +4,7 @@ import bioimg from './images/try1.png'
 
 function Autobiography() {
   const welcomeText = "Welcome";  
-  const descriptionText = "We are currently making some improvements to our website! We sell Pokemon cards including graded, singles and even Booster boxes";
+  const descriptionText = "Thank you for visiting our store. We are currently making some improvements to our website! We sell Pokemon cards including graded, singles and even Booster boxes";
   const codeText = "USE CODE : A55FGTTK7";
 
   return (
