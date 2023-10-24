@@ -150,26 +150,71 @@ body {
 }
   
 .card {
-    border: 1px solid #ccc;
-    padding: 10px;
+    display: grid;
+    justify-content: center;
+    background-color: #F8F4F4; /* Grey section at the top */
+    border-radius: 10px;
+    border: 1px solid #D6D7DC;
+    overflow: hidden; /* Clip rounded corners */
+    position: relative;
     margin: 10px;
-    text-align: center;
 }
   
-.card-image {
+.card img {
     width: 210px;
     height: 298px;
     object-fit: cover;
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
   
-button {
-    background-color: #4CAF50;
+.card-details {
+    background-color: white; /* White section at the bottom */
+    padding: 20px;
+    text-align: left;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 1px solid #D6D7DC;
+}
+  
+.card-details h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.card-details p {
+    font-size: 15px;
+    text-align: right;
+    margin-top: 10px;
+}
+  
+.card-details .price {
+    font-size: 45px;
+    height: 30px;
+    text-align: left;
+}
+  
+.card-details .addtocartbtn {
+    background-color: #735E59;
+    width: 90%;
     color: white;
     border: none;
     padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
     cursor: pointer;
-    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 12px;
 }
+  
+.card-details .addtocartbtn:hover {
+    background-color: #4c3e3a;
+}
+  
   
 button:hover {
     background-color: #4c3e3a;
