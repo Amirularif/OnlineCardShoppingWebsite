@@ -197,7 +197,7 @@ body {
   
 .card-details .addtocartbtn {
     background-color: #735E59;
-    width: 90%;
+    width: 80%;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -208,7 +208,7 @@ body {
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
-    margin-left: 12px;
+    margin-left: 24px;
 }
   
 .card-details .addtocartbtn:hover {
