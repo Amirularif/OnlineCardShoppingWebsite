@@ -158,6 +158,7 @@ body {
     overflow: hidden; /* Clip rounded corners */
     position: relative;
     margin: 10px;
+    width: 280px;   
 }
   
 .card img {
@@ -170,6 +171,7 @@ body {
 }
   
 .card-details {
+    width: 250px;
     background-color: white; /* White section at the bottom */
     padding: 20px;
     text-align: left;

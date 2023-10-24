@@ -7,7 +7,7 @@ function Card({ name, description, stock, price, onAddToCart, image }) {
       <img src={require(`${image}`)} alt={name} className="card-image" />
       <div className='card-details'>
         <h2>{name}</h2>
-        <p className="price">Price: ${price}</p>
+        <p className="price">${price}</p>
         <p className="description">{description}</p>
         <p className="stock">Stock: {stock}</p>
         <button className="addtocartbtn" onClick={onAddToCart}>Add to Cart</button>
