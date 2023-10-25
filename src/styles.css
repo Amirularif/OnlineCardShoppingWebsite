@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'GlacialIndifference';
-    src: url('./fonts/ttcommonpro.otf') format('truetype');
+    src: url('./fonts/GlacialIndifference.otf') format('truetype');
 }
 
 body {
@@ -178,14 +178,24 @@ body {
 .card-details {
     width: 290px;
     justify-content: space-between;
-    justify-content: space-between;
     align-items: flex-start;
     background-color: white; /* White section at the bottom */
     padding: 20px;
-    text-align: left;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top: 1px solid #D6D7DC;
+    font-family: 'GlacialIndifference';
+}
+
+.name-container{
+    height: 20%;
+}
+
+.name-container .name{
+    text-align: left;
+    font-size: 30px;
+    padding: 2px;
+    font-weight: bold;
 }
 
 .price-description-stock-container {
@@ -211,12 +221,10 @@ body {
   
 .card-details .price {
     margin-top: 2px;
+    font-family: 'TTBackward';
     font-size: 40px;
+    font-weight: bold;
     text-align: right;
-}
-
-.card-details h2{
-    padding: 2px;
 }
   
 .card-details .addtocartbtn {

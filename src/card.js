@@ -6,7 +6,9 @@ function Card({ name, description, stock, price, onAddToCart, image }) {
     <div className="card">
       <img src={require(`${image}`)} alt={name} className="card-image" />
       <div className="card-details">
-        <h2>{name}</h2>
+        <div className="name-container">
+          <p className="name">{name}</p>
+        </div>
         <div className="price-description-stock-container">
           <div className="description-stock-container">
             <p className="description">{description}</p>
