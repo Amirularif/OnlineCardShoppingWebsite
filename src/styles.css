@@ -14,6 +14,11 @@
     src: url('./fonts/ttcommonpro.otf') format('truetype');
 }
 
+@font-face {
+    font-family: 'GlacialIndifference';
+    src: url('./fonts/ttcommonpro.otf') format('truetype');
+}
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -158,20 +163,23 @@ body {
     overflow: hidden; /* Clip rounded corners */
     position: relative;
     margin: 10px;
-    width: 280px;   
+    width: 320px;   
 }
   
 .card img {
     width: 210px;
     height: 298px;
     object-fit: cover;
-    margin-left: 35px;
+    margin-left: 62px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
   
 .card-details {
-    width: 250px;
+    width: 290px;
+    justify-content: space-between;
+    justify-content: space-between;
+    align-items: flex-start;
     background-color: white; /* White section at the bottom */
     padding: 20px;
     text-align: left;
@@ -179,26 +187,40 @@ body {
     border-bottom-right-radius: 10px;
     border-top: 1px solid #D6D7DC;
 }
-  
-.card-details h2 {
-    font-size: 30px;
-    margin-top: 0;
-}
 
-.card-details p {
+.price-description-stock-container {
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 130px 110px;
+    justify-content: space-between;
+}
+  
+.description-stock-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.description-stock-container  .description,.stock {
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-size: 15px;
-    text-align: right;
-    margin-top: 10px;
+    text-align: left;
+    height: 20px;
 }
   
 .card-details .price {
-    font-size: 45px;
-    height: 30px;
-    text-align: left;
+    margin-top: 2px;
+    font-size: 40px;
+    text-align: right;
+}
+
+.card-details h2{
+    padding: 2px;
 }
   
 .card-details .addtocartbtn {
-    background-color: #735E59;
+    background-color: #2F2838;
     width: 80%;
     color: white;
     border: none;
@@ -214,7 +236,7 @@ body {
 }
   
 .card-details .addtocartbtn:hover {
-    background-color: #4c3e3a;
+    background-color: #201b26;
 }
   
   
