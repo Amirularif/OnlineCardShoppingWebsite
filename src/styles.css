@@ -192,6 +192,8 @@ body {
 }
 
 .name-container .name{
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: left;
     font-size: 30px;
     padding: 2px;
