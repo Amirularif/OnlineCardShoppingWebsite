@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import logo from './images/headerlogo.png';
+import cartIcon from './icons/cart.png'
+import profileIcon from './icons/profile.png'
 
 function Header({ onSearch }) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -33,6 +35,10 @@ function Header({ onSearch }) {
         <button type="submit" onClick={handleSearch}>
           Search
         </button>
+      </div>
+      <div className="icon-container">
+        <img src={cartIcon} alt="Cart" className="icon" />
+        <img src={profileIcon} alt="Profile" className="icon" />
       </div>
     </div>
   );

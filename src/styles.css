@@ -31,6 +31,7 @@ body {
     color: #735E59;
     padding: 10px 20px;
     border-bottom: 2px solid #735E59;
+    height: 100px;
 }
   
 .logo-container {
@@ -51,7 +52,7 @@ body {
 }
 
 .title-container {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 20px;
 }
 
@@ -63,7 +64,7 @@ body {
 .menu-container {
     display: flex;
     margin-left: 20px;
-    margin-top: 25px;
+    margin-top: 45px;
 }
   
 .menu-item {
@@ -75,7 +76,7 @@ body {
     display: flex;
     align-items: center;
     margin-left: auto;
-    margin-top: 20px;
+    margin-top: 35px;
     margin-right: 10px; 
   }
   
@@ -94,6 +95,18 @@ body {
     cursor: pointer;
     font-size: 14px;
   }
+
+.icon-container{
+    margin-top: 35px;
+    margin-right: 20px;
+}
+
+.icon-container .icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
  
 .autobiography-section {
     display: flex;
