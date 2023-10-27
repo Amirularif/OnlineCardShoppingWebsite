@@ -2,8 +2,8 @@ import React from 'react';
 import './styles.css';
 
 function Filter({ filterOptions, onFilterChange }) {
-  const handleFilterChange = (filterName) => {
-    onFilterChange(filterName);
+  const handleFilterChange = (filterName, isChecked) => {
+    onFilterChange(filterName, isChecked);
   };
 
   return (
@@ -15,17 +15,17 @@ function Filter({ filterOptions, onFilterChange }) {
             <input
               type="checkbox"
               checked={filterOptions.sortByGeneration}
-              onChange={() => handleFilterChange('sortByGeneration')}
+              onChange={(e) => handleFilterChange('sortByGeneration', e.target.checked)}
             />
             Sword & Shield
           </label>
-        </div> 
+        </div>
         <div className="filter-item">
           <label>
             <input
               type="checkbox"
               checked={filterOptions.sortByGeneration}
-              onChange={() => handleFilterChange('sortByGeneration')}
+              onChange={(e) => handleFilterChange('sortByGeneration', e.target.checked)}
             />
             X & Y
           </label>
@@ -35,7 +35,7 @@ function Filter({ filterOptions, onFilterChange }) {
             <input
               type="checkbox"
               checked={filterOptions.sortByGeneration}
-              onChange={() => handleFilterChange('sortByGeneration')}
+              onChange={(e) => handleFilterChange('sortByGeneration', e.target.checked)}
             />
             Black & White
           </label>
@@ -45,7 +45,7 @@ function Filter({ filterOptions, onFilterChange }) {
             <input
               type="checkbox"
               checked={filterOptions.sortByGeneration}
-              onChange={() => handleFilterChange('sortByGeneration')}
+              onChange={(e) => handleFilterChange('sortByGeneration', e.target.checked)}
             />
             Scarlet & Violet
           </label>
@@ -58,20 +58,20 @@ function Filter({ filterOptions, onFilterChange }) {
             <input
               type="checkbox"
               checked={filterOptions.sortByStockStatus}
-              onChange={() => handleFilterChange('sortByStockStatus')}
+              onChange={(e) => handleFilterChange('sortByStockStatus', e.target.checked)}
             />
             In Stock
           </label>
         </div>
-        <div className="filter-item"> 
+        <div className="filter-item">
           <label>
             <input
               type="checkbox"
               checked={filterOptions.sortByStockStatus}
-              onChange={() => handleFilterChange('sortByStockStatus')}
+              onChange={(e) => handleFilterChange('sortByStockStatus', e.target.checked)}
             />
             Out of Stock
-          </label>  
+          </label>
         </div>
       </div>
       <div className="filter-group">
@@ -80,8 +80,8 @@ function Filter({ filterOptions, onFilterChange }) {
           <label>
             <input
               type="checkbox"
-              checked={filterOptions.sortByStockStatus}
-              onChange={() => handleFilterChange('sortByStockStatus')}
+              checked={filterOptions.sortByCondition}
+              onChange={(e) => handleFilterChange('sortByCondition', e.target.checked)}
             />
             Mint 10
           </label>
@@ -90,8 +90,8 @@ function Filter({ filterOptions, onFilterChange }) {
           <label>
             <input
               type="checkbox"
-              checked={filterOptions.sortByStockStatus}
-              onChange={() => handleFilterChange('sortByStockStatus')}
+              checked={filterOptions.sortByCondition}
+              onChange={(e) => handleFilterChange('sortByCondition', e.target.checked)}
             />
             Near Mint 9
           </label>
@@ -100,8 +100,8 @@ function Filter({ filterOptions, onFilterChange }) {
           <label>
             <input
               type="checkbox"
-              checked={filterOptions.sortByStockStatus}
-              onChange={() => handleFilterChange('sortByStockStatus')}
+              checked={filterOptions.sortByCondition}
+              onChange={(e) => handleFilterChange('sortByCondition', e.target.checked)}
             />
             Near Mint 8
           </label>

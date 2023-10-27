@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import Header from './header';
 import Card from './card';
 import Autobiography from './autobioheader';
@@ -9,6 +9,11 @@ import cardsData from './cardsData.json'
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredCard, setFilteredCard] = useState([]);
+  const [filterOptions, setFilterOptions] = useState({
+    sortByGeneration: false,
+    sortByStockStatus: false,
+    sortByCondition: false,
+  });
 
   const handleSearch = (term) => {
     const foundCards = cardsData.filter(
@@ -18,12 +23,24 @@ function App() {
     setSearchTerm(term);
   };
 
-  const [filterOptions, setFilterOptions] = useState({
-    sortByGeneration: false,
-    sortByStockStatus: false,
-    sortByPrice: false,
-    sortByCondition: false,
-  });
+  const handleFilterChange = (filterName) => {
+    setFilterOptions((prevOptions) => ({
+      ...prevOptions,
+      [filterName]: !prevOptions[filterName],
+    }));
+
+    // Perform filtering based on selected checkboxes
+    const filteredCards = cardsData.filter((card) => {
+      if (filterName === 'sortByGeneration' && filterOptions.sortByGeneration) {
+        return card.description.includes('Sword and Shield'); 
+      }
+      // Add more conditions for other filters if needed
+      return true; // Default, don't filter
+    });
+
+    setFilteredCard(filteredCards);
+    
+  };
 
   const handleAddToCart = () => {
     console.log('Added to cart!');
@@ -35,7 +52,7 @@ function App() {
       <Autobiography />
       <div className="content-container">
         <div className="filter-container">
-          <Filter filterOptions={filterOptions} /*onFilterChange={handleFilterChange} *//>
+          <Filter filterOptions={filterOptions} onFilterChange={handleFilterChange}/>
         </div>
         <div className="card-container">
         {filteredCard.length > 0 ? (
