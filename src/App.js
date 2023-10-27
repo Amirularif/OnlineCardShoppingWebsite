@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import Header from './header';
 import Card from './card';
 import Autobiography from './autobioheader';
+import Filter from './filter';
 import './styles.css'; 
 import cardsData from './cardsData.json'
 
@@ -17,6 +18,13 @@ function App() {
     setSearchTerm(term);
   };
 
+  const [filterOptions, setFilterOptions] = useState({
+    sortByGeneration: false,
+    sortByStockStatus: false,
+    sortByPrice: false,
+    sortByCondition: false,
+  });
+
   const handleAddToCart = () => {
     console.log('Added to cart!');
   };
@@ -25,7 +33,11 @@ function App() {
     <div className="App">
       <Header onSearch={handleSearch} />
       <Autobiography />
-      <div className="card-container">
+      <div className="content-container">
+        <div className="filter-container">
+          <Filter filterOptions={filterOptions} /*onFilterChange={handleFilterChange} *//>
+        </div>
+        <div className="card-container">
         {filteredCard.length > 0 ? (
           filteredCard.map((card, index) => (
             <Card
@@ -51,8 +63,9 @@ function App() {
               image={card.image}
               onAddToCart={handleAddToCart}
             />
-          ))
-        )}
+            ))
+          )}
+        </div>
       </div>
     </div>
   );

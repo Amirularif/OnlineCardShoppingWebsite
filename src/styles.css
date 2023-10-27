@@ -159,6 +159,17 @@ body {
     height: auto;
 }
 
+.content-container {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: space-between;
+}
+  
+.filter-container {
+   margin: 10px;
+}
+
 .card-container {
     display: flex;
     justify-content: flex-start;
