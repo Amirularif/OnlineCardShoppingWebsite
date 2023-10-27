@@ -168,6 +168,29 @@ body {
   
 .filter-container {
    margin: 10px;
+   margin-top: 50px;
+   margin-left: 40px;
+}
+
+.filter-group{
+    text-align: left;
+    border-top: 1px solid #D6D7DC;
+    margin: 5px;
+    padding: 5px;
+}
+
+.filter-title{
+    font-family: "TTBackward";
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.filter-item{
+    font-family: "GlacialIndifference";
+    font-size: 20px;
+    margin: 20px 10px 10px 30px;
 }
 
 .card-container {
@@ -175,7 +198,7 @@ body {
     justify-content: flex-start;
     flex-wrap: wrap;
     padding: 20px;
-    margin-left: 200px;
+    margin-left: 50px;
 }
   
 .card {

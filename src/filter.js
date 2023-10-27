@@ -19,6 +19,8 @@ function Filter({ filterOptions, onFilterChange }) {
             />
             Sword & Shield
           </label>
+        </div> 
+        <div className="filter-item">
           <label>
             <input
               type="checkbox"
@@ -27,6 +29,8 @@ function Filter({ filterOptions, onFilterChange }) {
             />
             X & Y
           </label>
+        </div>
+        <div className="filter-item">
           <label>
             <input
               type="checkbox"
@@ -35,6 +39,8 @@ function Filter({ filterOptions, onFilterChange }) {
             />
             Black & White
           </label>
+        </div>
+        <div className="filter-item">
           <label>
             <input
               type="checkbox"
@@ -56,6 +62,8 @@ function Filter({ filterOptions, onFilterChange }) {
             />
             In Stock
           </label>
+        </div>
+        <div className="filter-item"> 
           <label>
             <input
               type="checkbox"
@@ -63,7 +71,7 @@ function Filter({ filterOptions, onFilterChange }) {
               onChange={() => handleFilterChange('sortByStockStatus')}
             />
             Out of Stock
-          </label>
+          </label>  
         </div>
       </div>
       <div className="filter-group">
@@ -77,6 +85,8 @@ function Filter({ filterOptions, onFilterChange }) {
             />
             Mint 10
           </label>
+        </div>
+        <div className="filter-item">
           <label>
             <input
               type="checkbox"
@@ -85,6 +95,8 @@ function Filter({ filterOptions, onFilterChange }) {
             />
             Near Mint 9
           </label>
+        </div>
+        <div className="filter-item">
           <label>
             <input
               type="checkbox"
