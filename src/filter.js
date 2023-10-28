@@ -57,8 +57,8 @@ function Filter({ filterOptions, onFilterChange }) {
           <label>
             <input
               type="checkbox"
-              checked={filterOptions.sortByStockStatus}
-              onChange={(e) => handleFilterChange('sortByStockStatus', e.target.checked)}
+              checked={filterOptions.InStock}
+              onChange={(e) => handleFilterChange('InStock', e.target.checked)}
             />
             In Stock
           </label>
@@ -67,8 +67,8 @@ function Filter({ filterOptions, onFilterChange }) {
           <label>
             <input
               type="checkbox"
-              checked={filterOptions.sortByStockStatus}
-              onChange={(e) => handleFilterChange('sortByStockStatus', e.target.checked)}
+              checked={filterOptions.OutofStock}
+              onChange={(e) => handleFilterChange('OutofStock', e.target.checked)}
             />
             Out of Stock
           </label>
@@ -80,8 +80,8 @@ function Filter({ filterOptions, onFilterChange }) {
           <label>
             <input
               type="checkbox"
-              checked={filterOptions.sortByCondition}
-              onChange={(e) => handleFilterChange('sortByCondition', e.target.checked)}
+              checked={filterOptions.Condition10}
+              onChange={(e) => handleFilterChange('Condition10', e.target.checked)}
             />
             Mint 10
           </label>
@@ -90,8 +90,8 @@ function Filter({ filterOptions, onFilterChange }) {
           <label>
             <input
               type="checkbox"
-              checked={filterOptions.sortByCondition}
-              onChange={(e) => handleFilterChange('sortByCondition', e.target.checked)}
+              checked={filterOptions.Condition9}
+              onChange={(e) => handleFilterChange('Condition9', e.target.checked)}
             />
             Near Mint 9
           </label>
@@ -100,8 +100,8 @@ function Filter({ filterOptions, onFilterChange }) {
           <label>
             <input
               type="checkbox"
-              checked={filterOptions.sortByCondition}
-              onChange={(e) => handleFilterChange('sortByCondition', e.target.checked)}
+              checked={filterOptions.Condition8}
+              onChange={(e) => handleFilterChange('Condition8', e.target.checked)}
             />
             Near Mint 8
           </label>

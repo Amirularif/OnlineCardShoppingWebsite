@@ -28,6 +28,13 @@
         "image": "./images/pikachu.png"
     },
     { 
+        "name": "Reshiram", 
+        "description": "Black and White", 
+        "stock": 2, 
+        "price": 27.99, 
+        "image": "./images/reshiram.png"
+    },
+    { 
         "name": "Arceus V", 
         "description": "Sword and Shield", 
         "stock": 10, 

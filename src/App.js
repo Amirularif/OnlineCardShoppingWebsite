@@ -10,12 +10,9 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredCard, setFilteredCard] = useState([]);
   const [filterOptions, setFilterOptions] = useState({
-    SwordandShield: false,
-    XandY: false,
-    BlackandWhite: false,
-    ScarletandViolet: false,
-    sortByStockStatus: false,
-    sortByCondition: false,
+    SwordandShield: false, XandY: false, BlackandWhite: false, ScarletandViolet: false,
+    InStock: false, OutofStock: false,
+    Condition10: false, Condition9: false, Condition8: false
   });
 
   useEffect(() => {
@@ -26,10 +23,10 @@ function App() {
       if (filterOptions.XandY && card.description.includes('X and Y')) {
         return true;
       }
-      if (filterOptions.BlackandWhite && card.description.includes('Black & White')) {
+      if (filterOptions.BlackandWhite && card.description.includes('Black and White')) {
         return true;
       }
-      if (filterOptions.ScarletandViolet && card.description.includes('Scarlet & Violet')) {
+      if (filterOptions.ScarletandViolet && card.description.includes('Scarlet and Violet')) {
         return true;
       }
       return false;
