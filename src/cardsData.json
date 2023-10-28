@@ -1,7 +1,7 @@
 [
     { 
         "name": "Charizard VMAX", 
-        "description": "Sword and Shield", 
+        "description": "X and Y", 
         "stock": 10, 
         "price": 5.99, 
         "image": "./images/charizardvmax.png"

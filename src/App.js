@@ -10,10 +10,32 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredCard, setFilteredCard] = useState([]);
   const [filterOptions, setFilterOptions] = useState({
-    sortByGeneration: false,
+    SwordandShield: false,
+    XandY: false,
+    BlackandWhite: false,
+    ScarletandViolet: false,
     sortByStockStatus: false,
     sortByCondition: false,
   });
+
+  useEffect(() => {
+    const filteredCards = cardsData.filter((card) => {
+      if (filterOptions.SwordandShield && card.description.includes('Sword and Shield')) {
+        return true;
+      }
+      if (filterOptions.XandY && card.description.includes('X and Y')) {
+        return true;
+      }
+      if (filterOptions.BlackandWhite && card.description.includes('Black & White')) {
+        return true;
+      }
+      if (filterOptions.ScarletandViolet && card.description.includes('Scarlet & Violet')) {
+        return true;
+      }
+      return false;
+    });
+    setFilteredCard(filteredCards);
+  }, [filterOptions]);
 
   const handleSearch = (term) => {
     const foundCards = cardsData.filter(
@@ -27,19 +49,7 @@ function App() {
     setFilterOptions((prevOptions) => ({
       ...prevOptions,
       [filterName]: !prevOptions[filterName],
-    }));
-
-    // Perform filtering based on selected checkboxes
-    const filteredCards = cardsData.filter((card) => {
-      if (filterName === 'sortByGeneration' && filterOptions.sortByGeneration) {
-        return card.description.includes('Sword and Shield'); 
-      }
-      // Add more conditions for other filters if needed
-      return true; // Default, don't filter
-    });
-
-    setFilteredCard(filteredCards);
-    
+    }));   
   };
 
   const handleAddToCart = () => {

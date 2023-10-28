@@ -14,8 +14,8 @@ function Filter({ filterOptions, onFilterChange }) {
           <label>
             <input
               type="checkbox"
-              checked={filterOptions.sortByGeneration}
-              onChange={(e) => handleFilterChange('sortByGeneration', e.target.checked)}
+              checked={filterOptions.SwordandShield}
+              onChange={(e) => handleFilterChange('SwordandShield', e.target.checked)}
             />
             Sword & Shield
           </label>
@@ -24,8 +24,8 @@ function Filter({ filterOptions, onFilterChange }) {
           <label>
             <input
               type="checkbox"
-              checked={filterOptions.sortByGeneration}
-              onChange={(e) => handleFilterChange('sortByGeneration', e.target.checked)}
+              checked={filterOptions.XandY}
+              onChange={(e) => handleFilterChange('XandY', e.target.checked)}
             />
             X & Y
           </label>
@@ -34,8 +34,8 @@ function Filter({ filterOptions, onFilterChange }) {
           <label>
             <input
               type="checkbox"
-              checked={filterOptions.sortByGeneration}
-              onChange={(e) => handleFilterChange('sortByGeneration', e.target.checked)}
+              checked={filterOptions.BlackandWhite}
+              onChange={(e) => handleFilterChange('BlackandWhite', e.target.checked)}
             />
             Black & White
           </label>
@@ -44,8 +44,8 @@ function Filter({ filterOptions, onFilterChange }) {
           <label>
             <input
               type="checkbox"
-              checked={filterOptions.sortByGeneration}
-              onChange={(e) => handleFilterChange('sortByGeneration', e.target.checked)}
+              checked={filterOptions.ScarletandViolet}
+              onChange={(e) => handleFilterChange('ScarletandViolet', e.target.checked)}
             />
             Scarlet & Violet
           </label>
