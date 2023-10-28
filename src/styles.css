@@ -169,7 +169,18 @@ body {
 .filter-container {
    margin: 10px;
    margin-top: 50px;
-   margin-left: 40px;
+   margin-left: 50px;
+}
+
+.filter-header {
+    font-family: "GlacialIndifference";
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #343333;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 5px;
 }
 
 .filter-group{
@@ -181,16 +192,20 @@ body {
 
 .filter-title{
     font-family: "GlacialIndifference";
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 25px;
     margin-left: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #343333;
     margin-top: 10px;
 }
 
 .filter-item{
     font-family: "GlacialIndifference";
     font-size: 20px;
-    margin: 20px 10px 10px 30px;
+    letter-spacing: 1px;
+    color: #525151;
+    margin: 20px 10px 10px 5px;
 }
 
 .card-container {
@@ -198,7 +213,7 @@ body {
     justify-content: flex-start;
     flex-wrap: wrap;
     padding: 20px;
-    margin-left: 50px;
+    margin-left: 10px;
 }
   
 .card {

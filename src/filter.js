@@ -2,20 +2,25 @@ import React from 'react';
 import './styles.css';
 
 function Filter({ filterOptions, onFilterChange }) {
-  const handleFilterChange = (filterName, isChecked) => {
-    onFilterChange(filterName, isChecked);
+  const SortbyText = " SORT : "; 
+  const handleFilterChange = (filterName) => {
+    onFilterChange(filterName);
   };
 
   return (
     <div className="filter-search-container">
+      <div className="filter-header">
+        {SortbyText}
+      </div>
       <div className="filter-group">
         <div className="filter-title">Generation</div>
         <div className="filter-item">
           <label>
             <input
-              type="checkbox"
+              type="radio"
+              name="generation"
               checked={filterOptions.SwordandShield}
-              onChange={(e) => handleFilterChange('SwordandShield', e.target.checked)}
+              onChange={() => handleFilterChange('SwordandShield')}
             />
             Sword & Shield
           </label>
@@ -23,9 +28,10 @@ function Filter({ filterOptions, onFilterChange }) {
         <div className="filter-item">
           <label>
             <input
-              type="checkbox"
+              type="radio"
+              name="generation"
               checked={filterOptions.XandY}
-              onChange={(e) => handleFilterChange('XandY', e.target.checked)}
+              onChange={() => handleFilterChange('XandY')}
             />
             X & Y
           </label>
@@ -33,9 +39,10 @@ function Filter({ filterOptions, onFilterChange }) {
         <div className="filter-item">
           <label>
             <input
-              type="checkbox"
+              type="radio"
+              name="generation"
               checked={filterOptions.BlackandWhite}
-              onChange={(e) => handleFilterChange('BlackandWhite', e.target.checked)}
+              onChange={() => handleFilterChange('BlackandWhite')}
             />
             Black & White
           </label>
@@ -43,9 +50,10 @@ function Filter({ filterOptions, onFilterChange }) {
         <div className="filter-item">
           <label>
             <input
-              type="checkbox"
+              type="radio"
+              name="generation"
               checked={filterOptions.ScarletandViolet}
-              onChange={(e) => handleFilterChange('ScarletandViolet', e.target.checked)}
+              onChange={() => handleFilterChange('ScarletandViolet')}
             />
             Scarlet & Violet
           </label>
