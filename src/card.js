@@ -18,7 +18,7 @@ function Card({ name, description, stock, price, onAddToCart, image }) {
             <p className="price">${price}</p>
           </div>
         </div>
-        <button className="addtocartbtn" onClick={onAddToCart}>
+        <button className="addtocartbtn" onClick={() => onAddToCart({ name, description, price, image })}>
           Add to Cart
         </button>
       </div>
