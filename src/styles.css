@@ -201,11 +201,61 @@ body {
 }
 
 .filter-item{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    justify-content:space-evenly;
     font-family: "GlacialIndifference";
     font-size: 20px;
     letter-spacing: 1px;
     color: #525151;
     margin: 20px 10px 10px 5px;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 24px;
+}
+  
+  /* Hide the default checkbox */
+.toggle-switch input {
+    display: none;
+}
+  
+  /* Styles for the slider (toggle button) */
+.toggle-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+  
+.toggle-switch input:checked + .slider {
+    background-color: #343333;
+}
+  
+  /* Styles for the round indicator inside the slider */
+.toggle-switch .slider::before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+  
+  /* Styles for the indicator when the checkbox is checked */
+.toggle-switch input:checked + .slider::before {
+    transform: translateX(18px);
 }
 
 .card-container {

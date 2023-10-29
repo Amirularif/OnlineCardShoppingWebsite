@@ -17,13 +17,14 @@ function Filter({ filterOptions, onFilterChange }) {
       <div className="filter-group">
         <div className="filter-title">Generation</div>
         <div className="filter-item">
-          <label>
+          <label>Sword & Shield</label>
+          <label className="toggle-switch">
             <input
               type="checkbox"
               checked={filterOptions.SwordandShield}
               onChange={(e) => handleFilterChange('SwordandShield', e.target.checked)}
             />
-            Sword & Shield
+            <span className="slider"></span>
           </label>
         </div>
         <div className="filter-item">
