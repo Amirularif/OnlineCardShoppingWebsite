@@ -28,33 +28,36 @@ function Filter({ filterOptions, onFilterChange }) {
           </label>
         </div>
         <div className="filter-item">
-          <label>
+          <label>X & Y</label>
+          <label className="toggle-switch">
             <input
               type="checkbox"
               checked={filterOptions.XandY}
               onChange={(e) => handleFilterChange('XandY', e.target.checked)}
             />
-            X & Y
+            <span className="slider"></span>
           </label>
         </div>
         <div className="filter-item">
-          <label>
+          <label>Black & White</label>
+          <label className="toggle-switch">
             <input
-              type="checkbox"
-              checked={filterOptions.BlackandWhite}
-              onChange={(e) => handleFilterChange('BlackandWhite', e.target.checked)}
-            />
-            Black & White
+                type="checkbox"
+                checked={filterOptions.BlackandWhite}
+                onChange={(e) => handleFilterChange('BlackandWhite', e.target.checked)}
+              />
+              <span className="slider"></span>
           </label>
         </div>
         <div className="filter-item">
-          <label>
+          <label>Scarlet & Violet</label>
+          <label className="toggle-switch">
             <input
-              type="checkbox"
-              checked={filterOptions.ScarletandViolet}
-              onChange={(e) => handleFilterChange('ScarletandViolet', e.target.checked)}
-            />
-            Scarlet & Violet
+                type="checkbox"
+                checked={filterOptions.ScarletandViolet}
+                onChange={(e) => handleFilterChange('ScarletandViolet', e.target.checked)}
+              />
+              <span className="slider"></span>
           </label>
         </div>
       </div>
