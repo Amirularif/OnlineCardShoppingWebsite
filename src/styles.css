@@ -218,12 +218,10 @@ body {
     height: 24px;
 }
   
-  /* Hide the default checkbox */
 .toggle-switch input {
     display: none;
 }
   
-  /* Styles for the slider (toggle button) */
 .toggle-switch .slider {
     position: absolute;
     cursor: pointer;
@@ -240,7 +238,6 @@ body {
     background-color: #343333;
 }
   
-  /* Styles for the round indicator inside the slider */
 .toggle-switch .slider::before {
     position: absolute;
     content: "";
@@ -253,7 +250,6 @@ body {
     border-radius: 50%;
 }
   
-  /* Styles for the indicator when the checkbox is checked */
 .toggle-switch input:checked + .slider::before {
     transform: translateX(18px);
 }

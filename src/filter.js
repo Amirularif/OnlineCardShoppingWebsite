@@ -64,56 +64,61 @@ function Filter({ filterOptions, onFilterChange }) {
       <div className="filter-group">
         <div className="filter-title">Stock Status</div>
         <div className="filter-item">
-          <label>
+          <label>In Stock</label>
+          <label className="toggle-switch">
             <input
-              type="checkbox"
-              checked={filterOptions.sortByStockStatus}
-              onChange={(e) => handleFilterChange('sortByStockStatus', e.target.checked)}
-            />
-            In Stock
+                type="checkbox"
+                checked={filterOptions.InStock}
+                onChange={(e) => handleFilterChange('InStock', e.target.checked)}
+              />
+              <span className="slider"></span>
           </label>
         </div>
         <div className="filter-item">
-          <label>
+          <label>Out of Stock</label>
+          <label className="toggle-switch">
             <input
-              type="checkbox"
-              checked={filterOptions.sortByStockStatus}
-              onChange={(e) => handleFilterChange('sortByStockStatus', e.target.checked)}
-            />
-            Out of Stock
+                type="checkbox"
+                checked={filterOptions.OutofStock}
+                onChange={(e) => handleFilterChange('OutofStock', e.target.checked)}
+              />
+              <span className="slider"></span>
           </label>
         </div>
       </div>
       <div className="filter-group">
         <div className="filter-title">Condition</div>
         <div className="filter-item">
-          <label>
+          <label>Mint 10</label>
+          <label className="toggle-switch">
             <input
-              type="checkbox"
-              checked={filterOptions.sortByCondition}
-              onChange={(e) => handleFilterChange('sortByCondition', e.target.checked)}
-            />
-            Mint 10
+                type="checkbox"
+                checked={filterOptions.Condition10}
+                onChange={(e) => handleFilterChange('Condition10', e.target.checked)}
+              />
+              <span className="slider"></span>
           </label>
         </div>
         <div className="filter-item">
-          <label>
+          <label>Near Mint 9</label>
+          <label className="toggle-switch">
             <input
-              type="checkbox"
-              checked={filterOptions.sortByCondition}
-              onChange={(e) => handleFilterChange('sortByCondition', e.target.checked)}
-            />
-            Near Mint 9
+                type="checkbox"
+                checked={filterOptions.Condition9}
+                onChange={(e) => handleFilterChange('Condition9', e.target.checked)}
+              />
+              <span className="slider"></span>
           </label>
         </div>
         <div className="filter-item">
-          <label>
+          <label>Near Mint 8</label>
+          <label className="toggle-switch">
             <input
-              type="checkbox"
-              checked={filterOptions.sortByCondition}
-              onChange={(e) => handleFilterChange('sortByCondition', e.target.checked)}
-            />
-            Near Mint 8
+                type="checkbox"
+                checked={filterOptions.Condition8}
+                onChange={(e) => handleFilterChange('Condition8', e.target.checked)}
+              />
+              <span className="slider"></span>
           </label>
         </div>
       </div>
