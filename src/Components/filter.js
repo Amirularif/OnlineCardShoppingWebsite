@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import '../styles.css';
 
 function Filter({ filterOptions, onFilterChange }) {
   const SortbyText = " SORT : ";

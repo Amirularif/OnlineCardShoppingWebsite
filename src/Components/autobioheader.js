@@ -1,6 +1,6 @@
 import React from 'react';
-import './styles.css'; 
-import bioimg from './images/try1.png'
+import '../styles.css'; 
+import bioimg from '../images/try1.png'
 
 function Autobiography() {
   const welcomeText = "Welcome";  

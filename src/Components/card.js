@@ -1,10 +1,10 @@
 import React from 'react';
-import './styles.css'; 
+import '../styles.css'; 
 
 function Card({ name, description, stock, price, onAddToCart, image }) {
   return (
-    <div className="card">
-      <img src={require(`${image}`)} alt={name} className="card-image" />
+    <div className="card"> 
+    <img src={require(`../images/${image}`)} alt={name} className="card-image"/>
       <div className="card-details">
         <div className="name-container">
           <p className="name">{name}</p>

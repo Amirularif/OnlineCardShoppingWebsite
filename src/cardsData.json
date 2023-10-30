@@ -4,56 +4,56 @@
         "description": "X and Y", 
         "stock": 10, 
         "price": 5.99, 
-        "image": "./images/charizardvmax.png"
+        "image": "charizardvmax.png"
     },
     { 
         "name": "Zapdos AR", 
         "description": "Sword and Shield", 
         "stock": 8, 
         "price": 7.99, 
-        "image": "./images/galarianbird.png"
+        "image": "galarianbird.png"
     },
     { 
         "name": "Mew", 
         "description": "X and Y", 
         "stock": 10, 
         "price": 5.99, 
-        "image": "./images/mew.png"
+        "image": "mew.png"
     },
     { 
         "name": "Pikachu", 
         "description": "Sword and Shield", 
         "stock": 8, 
         "price": 7.99, 
-        "image": "./images/pikachu.png"
+        "image": "pikachu.png"
     },
     { 
         "name": "Reshiram", 
         "description": "Black and White", 
         "stock": 2, 
         "price": 27.99, 
-        "image": "./images/reshiram.png"
+        "image": "reshiram.png"
     },
     { 
         "name": "Arceus V", 
         "description": "Sword and Shield", 
         "stock": 10, 
         "price": 5.99, 
-        "image": "./images/arceusv.png"
+        "image": "arceusv.png"
     },
     { 
         "name": "Umbreon VMAX", 
         "description": "Sword and Shield", 
         "stock": 8, 
         "price": 7.99, 
-        "image": "./images/umbreonvmax.png"
+        "image": "umbreonvmax.png"
     },
     { 
         "name": "Charizard V", 
         "description": "Sword and Shield", 
         "stock": 2, 
         "price": 17.99, 
-        "image": "./images/charizardv.jpeg"
+        "image": "charizardv.jpeg"
     }
     
 ]

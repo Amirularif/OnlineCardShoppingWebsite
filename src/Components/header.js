@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import logo from './images/headerlogo.png';
-import cartIcon from './icons/cart.png'
-import profileIcon from './icons/profile.png'
+import logo from '../images/headerlogo.png';
+import cartIcon from '../icons/cart.png'
+import profileIcon from '../icons/profile.png'
+import { Link } from "react-router-dom";
 
 function Header({ onSearch }) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -37,7 +38,9 @@ function Header({ onSearch }) {
         </button>
       </div>
       <div className="icon-container">
-        <img src={cartIcon} alt="Cart" className="icon" />
+        <Link to="/cart">
+          <img src={cartIcon} alt="Cart" className="icon" />
+        </Link>
         <img src={profileIcon} alt="Profile" className="icon" />
       </div>
     </div>
