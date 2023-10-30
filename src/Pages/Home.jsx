@@ -6,7 +6,7 @@ import Filter from '../Components/filter';
 import '../styles.css'; 
 import cardsData from '../cardsData.json'
 
-function Home(){
+function Home(homeItems){
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredCard, setFilteredCard] = useState([]);
   const [filterOptions, setFilterOptions] = useState({
@@ -49,8 +49,8 @@ function Home(){
     }));   
   };
 
-  const handleAddToCart = () => {
-    console.log('Added to cart!');
+  const handleAddToCart = (card) => {
+    homeItems.setCartItems([...homeItems.cartItems, card]);
   };
 
   return (

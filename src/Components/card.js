@@ -2,6 +2,11 @@ import React from 'react';
 import '../styles.css'; 
 
 function Card({ name, description, stock, price, onAddToCart, image }) {
+  const handleAddToCart = () => {
+    console.log('Adding item to cart:', { name, description, price, image });
+    onAddToCart({ name, description, price, image });
+  };
+
   return (
     <div className="card"> 
     <img src={require(`../images/${image}`)} alt={name} className="card-image"/>
@@ -18,7 +23,7 @@ function Card({ name, description, stock, price, onAddToCart, image }) {
             <p className="price">${price}</p>
           </div>
         </div>
-        <button className="addtocartbtn" onClick={() => onAddToCart({ name, description, price, image })}>
+        <button className="addtocartbtn" onClick={handleAddToCart}>
           Add to Cart
         </button>
       </div>

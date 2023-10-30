@@ -1,6 +1,11 @@
 import React from 'react';
+import '../styles.css'; 
 
 function Cart({ cartItems }) {
+  if (!cartItems) {
+    return <div className="cart-container">Cart is empty</div>;
+  }
+
   return (
     <div className="cart-container">
       <h2>Shopping Cart</h2>
