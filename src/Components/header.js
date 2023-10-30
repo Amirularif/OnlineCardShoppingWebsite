@@ -4,12 +4,14 @@ import cartIcon from '../icons/cart.png'
 import profileIcon from '../icons/profile.png'
 import { Link } from "react-router-dom";
 
-function Header({ onSearch }) {
+function Header({ onSearch, totalItemsInCart }) {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleSearch = () => {
     onSearch(searchTerm);
   };
+
+  console.log('Number of items in the cart:', totalItemsInCart);
 
   return (
     <div className="header">
@@ -40,6 +42,7 @@ function Header({ onSearch }) {
       <div className="icon-container">
         <Link to="/cart">
           <img src={cartIcon} alt="Cart" className="icon" />
+          {totalItemsInCart > 0 && <span className="cart-indicator">{totalItemsInCart}</span>}
         </Link>
         <img src={profileIcon} alt="Profile" className="icon" />
       </div>

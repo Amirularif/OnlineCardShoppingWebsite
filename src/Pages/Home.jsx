@@ -15,6 +15,8 @@ function Home(homeItems){
     Condition10: false, Condition9: false, Condition8: false
   });
 
+  const totalItemsInCart = homeItems.cartItems.length;
+
   useEffect(() => {
     const filteredCards = cardsData.filter((card) => {
       if (filterOptions.SwordandShield && card.description.includes('Sword and Shield')) {
@@ -55,7 +57,7 @@ function Home(homeItems){
 
   return (
     <div className="App">
-      <Header onSearch={handleSearch} />
+      <Header onSearch={handleSearch} totalItemsInCart={totalItemsInCart} />
       <Autobiography />
       <div className="content-container">
         <div className="filter-container">
