@@ -1,7 +1,11 @@
 import React from 'react';
+import TotalPrice from '../Components/totalprice';
 import '../styles.css'; 
 
 function Cart({ cartItems }) {
+
+  const totalPrice = cartItems.reduce((total, item) => total + item.price, 0).toFixed(2);
+
   if (!cartItems) {
     return <div className="cart-container">Cart is empty</div>;
   }
@@ -21,6 +25,7 @@ function Cart({ cartItems }) {
           </div>
         ))}
       </div>
+      <TotalPrice totalPrice={totalPrice} />
     </div>
   );
 }
