@@ -4,7 +4,7 @@ import Card from '../Components/card';
 import Autobiography from '../Components/autobioheader';
 import Filter from '../Components/filter';
 import '../styles.css'; 
-import cardsData from '../cardsData.json'
+import cardsData from '../cardsData.json';
 
 function Home(homeItems){
   const [searchTerm, setSearchTerm] = useState('');

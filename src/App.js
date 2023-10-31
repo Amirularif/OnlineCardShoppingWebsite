@@ -5,12 +5,16 @@ import Cart from './Pages/Cart';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
-
+  const handleRemoveFromCart = (item) => {
+    console.log('Removing item:', item);
+    const updatedCart = cartItems.filter((cartItem) => cartItem !== item);
+    setCartItems(updatedCart);
+  };
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home cartItems={cartItems} setCartItems={setCartItems}e  />} />
-        <Route path="/cart" element={<Cart cartItems={cartItems} />} />
+        <Route path="/cart" element={<Cart cartItems={cartItems} onRemoveFromCart={handleRemoveFromCart}/>} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
