@@ -4,7 +4,7 @@ import '../styles.css';
 function Card({ name, description, stock, price, onAddToCart, image }) {
   const handleAddToCart = () => {
     console.log('Adding item to cart:', { name, description, price, image });
-    onAddToCart({ name, description, price, image });
+    onAddToCart({ name, description, stock, price, image });
   };
 
   return (

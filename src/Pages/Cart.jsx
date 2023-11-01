@@ -4,7 +4,7 @@ import Header from '../Components/header';
 import '../styles.css'; 
 
 function Cart({ cartItems, onRemoveFromCart }) {
-
+  const ShoppingCartText = "Shopping Cart";
   const totalPrice = cartItems.reduce((total, item) => total + item.price, 0).toFixed(2);
 
   if (!cartItems) {
@@ -19,7 +19,9 @@ function Cart({ cartItems, onRemoveFromCart }) {
     <div className="App">
       <Header/>
       <div className="cart-container">
-        <h2>Shopping Cart</h2>
+        <div className="cart-container-header">
+          {ShoppingCartText}
+        </div>
         <div className="cart-items-container">
           {cartItems.map((item, index) => (
             <div className="cart-item" key={index}>
@@ -28,8 +30,8 @@ function Cart({ cartItems, onRemoveFromCart }) {
               </div>
               <div className="cart-item-middle-container">
                 <div className="cart-items-name-description">
-                  <h3>{item.name}</h3>
-                  <p>{item.description}</p>
+                  <p className="name">Pokemon Card {item.stock} {item.name}</p>
+                  <p className="description">{item.description}</p>
                 </div>
               </div>
               <div className="cart-items-right-container">
@@ -39,7 +41,9 @@ function Cart({ cartItems, onRemoveFromCart }) {
             </div>
           ))}
         </div>
-        <TotalPrice totalPrice={totalPrice} />
+        <div className="cart-total-price">
+          <TotalPrice totalPrice={totalPrice} />
+        </div>
       </div>
     </div> 
   );
