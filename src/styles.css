@@ -412,6 +412,7 @@ button:hover {
     height: 310px;
     padding: 2px;
     margin-top: 10px;
+    border-top: 1px solid #D6D7DC;
 }
 
 .cart-item-left-container{
@@ -445,6 +446,29 @@ button:hover {
     font-family: 'GlacialIndefference';
     font-size: 20px;
     letter-spacing: 1px;
+}
+
+.cart-items-right-container{
+    margin-top: 10px;
+    align-content: start;
+}
+
+.cart-item-price{
+    margin-top: 25px;
+    font-family: 'TTBackward';
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+.cart-item-remove-button{
+    margin-top: 30px;
+    background-color: #735E59;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 .cart-total-price{

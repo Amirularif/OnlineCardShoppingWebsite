@@ -36,7 +36,7 @@ function Cart({ cartItems, onRemoveFromCart }) {
               </div>
               <div className="cart-items-right-container">
                 <div className="cart-item-price">${item.price}</div>
-                <button onClick={() => handleRemoveClick(item)}>Remove</button>
+                <button className="cart-item-remove-button" onClick={() => handleRemoveClick(item)}>Remove</button>
               </div>
             </div>
           ))}
