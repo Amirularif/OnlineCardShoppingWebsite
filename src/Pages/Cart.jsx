@@ -16,24 +16,32 @@ function Cart({ cartItems, onRemoveFromCart }) {
   };
 
   return (
-    <div className="cart-container">
+    <div className="App">
       <Header/>
-      <h2>Shopping Cart</h2>
-      <div className="cart-items">
-        {cartItems.map((item, index) => (
-          <div className="cart-item" key={index}>
-            <img src={require(`../images/${item.image}`)} alt={item.name} className="cart-item-image" />
-            <div className="cart-item-details">
-              <h3>{item.name}</h3>
-              <p>{item.description}</p>
+      <div className="cart-container">
+        <h2>Shopping Cart</h2>
+        <div className="cart-items-container">
+          {cartItems.map((item, index) => (
+            <div className="cart-item" key={index}>
+              <div className="cart-item-left-container">
+                <img src={require(`../images/${item.image}`)} alt={item.name} className="cart-item-image" />
+              </div>
+              <div className="cart-item-middle-container">
+                <div className="cart-items-name-description">
+                  <h3>{item.name}</h3>
+                  <p>{item.description}</p>
+                </div>
+              </div>
+              <div className="cart-items-right-container">
+                <div className="cart-item-price">${item.price}</div>
+                <button onClick={() => handleRemoveClick(item)}>Remove</button>
+              </div>
             </div>
-            <div className="cart-item-price">${item.price}</div>
-            <button onClick={() => handleRemoveClick(item)}>Remove</button>
-          </div>
-        ))}
+          ))}
+        </div>
+        <TotalPrice totalPrice={totalPrice} />
       </div>
-      <TotalPrice totalPrice={totalPrice} />
-    </div>
+    </div> 
   );
 }
 

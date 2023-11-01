@@ -384,3 +384,23 @@ body {
 button:hover {
     background-color: #4c3e3a;
 }
+
+.cart-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}   
+
+.cart-item{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    justify-content: space-between;
+    height: 350px;
+}
+
+.cart-item-image{
+    width: 210px;
+    height: 298px;
+    object-fit: cover;
+    margin: 10px;
+}
