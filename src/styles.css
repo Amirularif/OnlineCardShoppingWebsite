@@ -472,5 +472,11 @@ button:hover {
 }
 
 .cart-total-price{
-    margin-right: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    font-family: 'GlacialIndifference';
+    font-size: 30px;
+    align-self: flex-end;
+    border-top: 1px solid #D6D7DC;
 }
