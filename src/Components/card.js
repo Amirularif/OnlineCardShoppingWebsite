@@ -1,10 +1,10 @@
 import React from 'react';
 import '../styles.css'; 
 
-function Card({ name, description, stock, price, onAddToCart, image }) {
+function Card({ id, name, description, stock, price, onAddToCart, image }) {
   const handleAddToCart = () => {
-    console.log('Adding item to cart:', { name, description, price, image });
-    onAddToCart({ name, description, stock, price, image });
+    console.log('Adding item to cart:', { id,name, description, price, image });
+    onAddToCart({ id,name, description, stock, price, image });
   };
 
   return (

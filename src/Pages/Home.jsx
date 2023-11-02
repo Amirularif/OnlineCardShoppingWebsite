@@ -65,9 +65,9 @@ function Home(homeItems){
         </div>
         <div className="card-container">
         {filteredCard.length > 0 ? (
-          filteredCard.map((card, index) => (
+          filteredCard.map((card) => (
             <Card
-              key={index} // Use a unique ID if available, like card.id
+              id={card.id} // Use a unique ID if available, like card.id
               name={card.name}
               description={card.description}
               stock={card.stock}
@@ -79,9 +79,9 @@ function Home(homeItems){
         ) : searchTerm ? (
           <div className="no-result">No result</div>
         ) : (
-          cardsData.map((card, index) => (
+          cardsData.map((card) => (
             <Card
-              key={index} // Use a unique ID if available, like card.id
+              id={card.id} // Use a unique ID if available, like card.id
               name={card.name}
               description={card.description}
               stock={card.stock}

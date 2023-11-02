@@ -1,5 +1,6 @@
 [
     { 
+        "id" : 1,
         "name": "Charizard VMAX", 
         "description": "X and Y", 
         "stock": 10, 
@@ -7,6 +8,7 @@
         "image": "charizardvmax.png"
     },
     { 
+        "id" : 2,
         "name": "Zapdos AR", 
         "description": "Sword and Shield", 
         "stock": 8, 
@@ -14,6 +16,7 @@
         "image": "galarianbird.png"
     },
     { 
+        "id" : 3,
         "name": "Mew", 
         "description": "X and Y", 
         "stock": 10, 
@@ -21,6 +24,7 @@
         "image": "mew.png"
     },
     { 
+        "id" : 4,
         "name": "Pikachu", 
         "description": "Sword and Shield", 
         "stock": 8, 
@@ -28,6 +32,7 @@
         "image": "pikachu.png"
     },
     { 
+        "id" : 5,
         "name": "Reshiram", 
         "description": "Black and White", 
         "stock": 2, 
@@ -35,6 +40,7 @@
         "image": "reshiram.png"
     },
     { 
+        "id" : 6,
         "name": "Arceus V", 
         "description": "Sword and Shield", 
         "stock": 10, 
@@ -42,6 +48,7 @@
         "image": "arceusv.png"
     },
     { 
+        "id" : 7,
         "name": "Umbreon VMAX", 
         "description": "Sword and Shield", 
         "stock": 8, 
@@ -49,6 +56,7 @@
         "image": "umbreonvmax.png"
     },
     { 
+        "id" : 8,
         "name": "Charizard V", 
         "description": "Sword and Shield", 
         "stock": 2, 

@@ -1,11 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import TotalPrice from '../Components/totalprice';
 import Header from '../Components/header';
 import '../styles.css'; 
 
 function Cart({ cartItems, onRemoveFromCart }) {
+
+  const [multipliers, setMultipliers] = useState({});
   const ShoppingCartText = "Shopping Cart";
-  const totalPrice = cartItems.reduce((total, item) => total + item.price, 0).toFixed(2);
 
   if (!cartItems) {
     return <div className="cart-container">Cart is empty</div>;
@@ -14,6 +15,27 @@ function Cart({ cartItems, onRemoveFromCart }) {
   const handleRemoveClick = (item) => {
     onRemoveFromCart(item);
   };
+
+  const handleMultiplierChange = (itemId, value) => {
+    setMultipliers((prevMultipliers) => ({
+      ...prevMultipliers,
+      [itemId]: value,
+    }));
+  };
+
+  const calculatePrice = (item) => {
+    const multiplier = multipliers[item.id] || 1;
+    return (item.price * multiplier).toFixed(2);
+  };
+
+  const calculateTotalPrice = () => {
+    return cartItems.reduce((total, item) => {
+      const updatedPrice = calculatePrice(item);
+      return total + parseFloat(updatedPrice);
+    }, 0).toFixed(2);
+  };
+
+  const totalPrice = 1;
 
   return (
     <div className="App">
@@ -35,7 +57,19 @@ function Cart({ cartItems, onRemoveFromCart }) {
                 </div>
               </div>
               <div className="cart-items-right-container">
-                <div className="cart-item-price">${item.price}</div>
+              <div className="cart-item-dropdown">
+                <select
+                  value={multipliers[item.id]}
+                  onChange={(e) => handleMultiplierChange(item.id, parseInt(e.target.value))}
+                  >
+                  {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((number) => (
+                    <option key={number} value={number}>
+                      {number}
+                    </option>
+                  ))}
+                </select>
+                </div>
+                <div className="cart-item-price">${calculatePrice(item)}</div>
                 <button className="cart-item-remove-button" onClick={() => handleRemoveClick(item)}>Remove</button>
               </div>
             </div>
