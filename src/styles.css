@@ -409,7 +409,7 @@ button:hover {
     display: grid;
     grid-template-columns: 20% 50% 30%;
     justify-content: space-between;
-    height: 310px;
+    height: 270px;
     padding: 2px;
     margin-top: 10px;
     border-top: 1px solid #D6D7DC;
@@ -471,12 +471,17 @@ button:hover {
     font-size: 14px;
 }
 
-.cart-total-price{
+.cart-total-price-container{
     display: flex;
     width: 100%;
     justify-content: flex-end;
-    font-family: 'GlacialIndifference';
-    font-size: 30px;
     align-self: flex-end;
     border-top: 1px solid #D6D7DC;
+}
+
+.cart-total-price-container .total-price{
+    margin-top: 20px;
+    margin-right: 20px;
+    font-family: 'GlacialIndifference';
+    font-size: 30px;
 }

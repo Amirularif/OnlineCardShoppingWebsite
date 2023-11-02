@@ -75,8 +75,10 @@ function Cart({ cartItems, onRemoveFromCart }) {
             </div>
           ))}
         </div>
-        <div className="cart-total-price">
-          <TotalPrice totalPrice={totalPrice} />
+        <div className="cart-total-price-container">
+          <div className="total-price">
+            <TotalPrice totalPrice={totalPrice} />
+          </div>
         </div>
       </div>
     </div> 
