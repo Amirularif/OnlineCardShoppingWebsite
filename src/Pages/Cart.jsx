@@ -35,7 +35,7 @@ function Cart({ cartItems, onRemoveFromCart }) {
     }, 0).toFixed(2);
   };
 
-  const totalPrice = 1;
+  const totalPrice = calculateTotalPrice();
 
   return (
     <div className="App">
