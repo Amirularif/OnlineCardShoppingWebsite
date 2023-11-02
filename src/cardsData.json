@@ -55,7 +55,9 @@
         "description": "Sword and Shield", 
         "stock": 10, 
         "price": 5.99, 
-        "image": "arceusv.png"
+        "image": "arceusv.png",
+        "code": "040/170",
+        "condition":"Mint 10"  
     },
     { 
         "id" : 7,
@@ -63,7 +65,9 @@
         "description": "Sword and Shield", 
         "stock": 8, 
         "price": 7.99, 
-        "image": "umbreonvmax.png"
+        "image": "umbreonvmax.png",
+        "code": "040/170",
+        "condition":"Mint 10"  
     },
     { 
         "id" : 8,
@@ -71,7 +75,9 @@
         "description": "Sword and Shield", 
         "stock": 2, 
         "price": 17.99, 
-        "image": "charizardv.jpeg"
+        "image": "charizardv.jpeg",
+        "code": "040/170",
+        "condition":"Mint 10"  
     }
     
 ]
