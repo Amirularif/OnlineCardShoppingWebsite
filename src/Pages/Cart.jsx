@@ -50,13 +50,13 @@ function Cart({ cartItems, onRemoveFromCart }) {
               <div className="cart-item-left-container">
                 <img src={require(`../images/${item.image}`)} alt={item.name} className="cart-item-image" />
               </div>
-              <div className="cart-item-middle-container">
+              <div className="cart-item-middleleft-container">
                 <div className="cart-items-name-description">
                   <p className="name">Pokemon Card {item.stock} {item.name}</p>
                   <p className="description">{item.description}</p>
                 </div>
               </div>
-              <div className="cart-items-right-container">
+              <div className="cart-item-middleright-container">
               <div className="cart-item-dropdown">
                 <select
                   value={multipliers[item.id]}
@@ -69,8 +69,10 @@ function Cart({ cartItems, onRemoveFromCart }) {
                   ))}
                 </select>
                 </div>
+              </div>
+              <div className="cart-items-right-container">
+                <button className="cart-item-remove-button" onClick={() => handleRemoveClick(item)}>X</button>
                 <div className="cart-item-price">${calculatePrice(item)}</div>
-                <button className="cart-item-remove-button" onClick={() => handleRemoveClick(item)}>Remove</button>
               </div>
             </div>
           ))}

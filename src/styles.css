@@ -407,7 +407,7 @@ button:hover {
 
 .cart-item{
     display: grid;
-    grid-template-columns: 20% 50% 30%;
+    grid-template-columns: 20% 40% 10% 30%;
     justify-content: space-between;
     height: 270px;
     padding: 2px;
@@ -429,7 +429,11 @@ button:hover {
     margin: 10px;
 }
 
-.cart-item-middle-container{
+.cart-item-middleleft-container{
+    margin-top: 10px;
+}
+
+.cart-item-middleright-container{
     margin-top: 10px;
 }
 
@@ -451,6 +455,7 @@ button:hover {
 }
 
 .cart-items-right-container{
+    display: grid;
     margin-top: 10px;
     align-content: start;
 }
@@ -464,13 +469,15 @@ button:hover {
 }
 
 .cart-item-remove-button{
-    margin-top: 30px;
     background-color: #735E59;
     color: white;
-    border: none;
-    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 6px;
+    margin-right: 60%;
+    margin-top: 5%;
+    justify-self: flex-end;
     cursor: pointer;
-    font-size: 14px;
 }
 
 .cart-total-price-container{

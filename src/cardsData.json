@@ -5,7 +5,9 @@
         "description": "X and Y", 
         "stock": 10, 
         "price": 5.99, 
-        "image": "charizardvmax.png"
+        "image": "charizardvmax.png",
+        "code": "040/170",
+        "condition":"Mint 10"    
     },
     { 
         "id" : 2,
@@ -13,7 +15,9 @@
         "description": "Sword and Shield", 
         "stock": 8, 
         "price": 7.99, 
-        "image": "galarianbird.png"
+        "image": "galarianbird.png",
+        "code": "040/170",
+        "condition":"Mint 10"  
     },
     { 
         "id" : 3,
@@ -21,7 +25,9 @@
         "description": "X and Y", 
         "stock": 10, 
         "price": 5.99, 
-        "image": "mew.png"
+        "image": "mew.png",
+        "code": "040/170",
+        "condition":"Mint 10"  
     },
     { 
         "id" : 4,
@@ -29,7 +35,9 @@
         "description": "Sword and Shield", 
         "stock": 8, 
         "price": 7.99, 
-        "image": "pikachu.png"
+        "image": "pikachu.png",
+        "code": "040/170",
+        "condition":"Mint 10"  
     },
     { 
         "id" : 5,
@@ -37,7 +45,9 @@
         "description": "Black and White", 
         "stock": 2, 
         "price": 27.99, 
-        "image": "reshiram.png"
+        "image": "reshiram.png",
+        "code": "040/170",
+        "condition":"Mint 10"  
     },
     { 
         "id" : 6,
