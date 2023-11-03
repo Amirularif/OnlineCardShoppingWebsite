@@ -57,10 +57,11 @@ function Cart({ cartItems, onRemoveFromCart }) {
                 </div>
               </div>
               <div className="cart-item-middleright-container">
-              <div className="cart-item-dropdown">
+              <div className="cart-item-dropdown-container">
                 <select
                   value={multipliers[item.id]}
                   onChange={(e) => handleMultiplierChange(item.id, parseInt(e.target.value))}
+                  className="cart-item-dropdown"
                   >
                   {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((number) => (
                     <option key={number} value={number}>

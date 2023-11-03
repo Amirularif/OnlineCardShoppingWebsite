@@ -446,8 +446,15 @@ button:hover {
     background-color: white; /* White section at the bottom */
 }
 
+.cart-item-dropdown-container{
+    margin-top: 65%;
+    margin-left: 20%;
+}
+
 .cart-item-dropdown{
-    margin-top: 45%;
+    width: 70px;
+    font-family: 'GlacialIndifference';
+    font-size: 20px;
 }
 
 .cart-items-name-description{
@@ -476,7 +483,8 @@ button:hover {
 }
 
 .cart-item-price{
-    margin-top: 25px;
+    margin-top: 10%;
+    margin-left: 10%;
     font-family: 'TTBackward';
     font-weight: bold;
     font-size: 50px;
@@ -484,11 +492,10 @@ button:hover {
 }
 
 .cart-item-remove-button{
-    background-color: #735E59;
+    background-color: #343333;
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     border-radius: 50%;
-    padding: 2px 6px;
     margin-left: 80%;
     margin-top: 5%;
     justify-self: flex-end;
