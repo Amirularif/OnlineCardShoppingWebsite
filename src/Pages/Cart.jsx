@@ -52,7 +52,7 @@ function Cart({ cartItems, onRemoveFromCart }) {
               </div>
               <div className="cart-item-middleleft-container">
                 <div className="cart-items-name-description">
-                  <p className="name">Pokemon Card {item.stock} {item.name}</p>
+                  <p className="name">{item.title} {item.name} {item.rarity} {item.code} {item.set}</p>
                   <p className="description">{item.description}</p>
                 </div>
               </div>

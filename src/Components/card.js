@@ -1,10 +1,10 @@
 import React from 'react';
 import '../styles.css'; 
 
-function Card({ id, name, description, stock, price, onAddToCart, image }) {
+function Card({ id,title, name, description, stock, price, onAddToCart, image, code, set, rarity }) {
   const handleAddToCart = () => {
-    console.log('Adding item to cart:', { id,name, description, price, image });
-    onAddToCart({ id,name, description, stock, price, image });
+    console.log('Adding item to cart:', { id,title, name, description, price, image, code, set, rarity });
+    onAddToCart({ id,title, name, description,stock, price, image, code, set, rarity });
   };
 
   return (
@@ -12,7 +12,7 @@ function Card({ id, name, description, stock, price, onAddToCart, image }) {
     <img src={require(`../images/${image}`)} alt={name} className="card-image"/>
       <div className="card-details">
         <div className="name-container">
-          <p className="name">{name}</p>
+          <p className="name">{title} {name} {rarity} {code} {set}</p>
         </div>
         <div className="price-description-stock-container">
           <div className="description-stock-container">

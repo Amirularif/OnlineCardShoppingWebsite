@@ -67,12 +67,16 @@ function Home(homeItems){
         {filteredCard.length > 0 ? (
           filteredCard.map((card) => (
             <Card
-              id={card.id} // Use a unique ID if available, like card.id
+              id={card.id} 
+              title={card.title}
               name={card.name}
               description={card.description}
               stock={card.stock}
               price={card.price}
               image={card.image}
+              rarity={card.rarity}
+              code={card.code}
+              set={card.set}
               onAddToCart={handleAddToCart}
             />
           ))
@@ -81,12 +85,16 @@ function Home(homeItems){
         ) : (
           cardsData.map((card) => (
             <Card
-              id={card.id} // Use a unique ID if available, like card.id
+              id={card.id}
+              title={card.title} 
               name={card.name}
               description={card.description}
               stock={card.stock}
               price={card.price}
               image={card.image}
+              rarity={card.rarity}
+              code={card.code}
+              set={card.set}
               onAddToCart={handleAddToCart}
             />
             ))
