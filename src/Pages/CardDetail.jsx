@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import Header from '../Components/header'
 
 function CardDetail({ cardsData }) {
   const { id } = useParams();
@@ -18,11 +19,13 @@ function CardDetail({ cardsData }) {
   };
 
   return (
-    <div className="card-detail-container">
-      <div className="card-detail-left">
+    <div className="card-detail">
+      <Header/>
+      <div className="card-detail-container">
+      <div className="card-detail-left-container">
         <img src={require(`../images/${card.image}`)} alt={card.name} className="card-detail-image" />
       </div>
-      <div className="card-detail-right">
+      <div className="card-detail-right-container">
         <h2>{card.name}</h2>
         <p>{card.description}</p>
         <p>Stock: {card.stock}</p>
@@ -31,6 +34,7 @@ function CardDetail({ cardsData }) {
           <button onClick={handleAddToCart}>Add to Cart</button>
           <button onClick={handleBuyNow}>Buy Now</button>
         </div>
+      </div>
       </div>
     </div>
   );

@@ -516,3 +516,35 @@ button:hover {
     font-family: 'GlacialIndifference';
     font-size: 30px;
 }
+
+.card-detail-container{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #F8F4F4; /* Grey section at the top */
+    border-radius: 10px;
+    border: 1px solid #D6D7DC;
+    overflow: hidden;
+}
+
+.card-detail-left-container{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.card-detail-right-container{
+    padding-top: 5%;
+    padding-left: 1%;
+    background-color: white; /* White section at the bottom */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 1px solid #D6D7DC;
+}
+
+.card-detail-image{
+    width: 300px;
+    height: auto;
+}
