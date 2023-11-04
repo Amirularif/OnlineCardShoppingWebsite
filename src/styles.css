@@ -535,6 +535,11 @@ button:hover {
     padding: 50px;
 }
 
+.card-detail-image{
+    width: 300px;
+    height: auto;
+}
+
 .card-detail-right-container{
     padding-top: 5%;
     padding-left: 1%;
@@ -544,7 +549,9 @@ button:hover {
     border-left: 1px solid #D6D7DC;
 }
 
-.card-detail-image{
-    width: 300px;
-    height: auto;
+.card-detail-name{
+    font-family: 'TTBackward';
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }

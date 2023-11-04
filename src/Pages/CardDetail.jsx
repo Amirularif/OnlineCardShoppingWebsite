@@ -26,7 +26,7 @@ function CardDetail({ cardsData }) {
         <img src={require(`../images/${card.image}`)} alt={card.name} className="card-detail-image" />
       </div>
       <div className="card-detail-right-container">
-        <h2>{card.name}</h2>
+        <p className="card-detail-name">{card.title} {card.name} {card.rarity} {card.code} {card.set}</p>
         <p>{card.description}</p>
         <p>Stock: {card.stock}</p>
         <p>Price: ${card.price.toFixed(2)}</p>
