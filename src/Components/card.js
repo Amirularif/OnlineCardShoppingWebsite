@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles.css'; 
+import '../styles.css';
+import { Link } from 'react-router-dom';
 
 function Card({ id,title, name, description, stock, price, onAddToCart, image, code, set, rarity }) {
   const handleAddToCart = () => {
@@ -9,7 +10,9 @@ function Card({ id,title, name, description, stock, price, onAddToCart, image, c
 
   return (
     <div className="card"> 
-    <img src={require(`../images/${image}`)} alt={name} className="card-image"/>
+      <Link to={`/card/${id}`}>
+        <img src={require(`../images/${image}`)} alt={name} className="card-image"/>
+      </Link>
       <div className="card-details">
         <div className="name-container">
           <p className="name">{title} {name} {rarity} {code} {set}</p>
@@ -27,7 +30,7 @@ function Card({ id,title, name, description, stock, price, onAddToCart, image, c
           Add to Cart
         </button>
       </div>
-    </div>
+    </div> 
   );
 }
 
