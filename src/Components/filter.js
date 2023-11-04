@@ -28,12 +28,12 @@ function Filter({ filterOptions, onFilterChange }) {
           </label>
         </div>
         <div className="filter-item">
-          <label>X & Y</label>
+          <label>Sun & Moon</label>
           <label className="toggle-switch">
             <input
               type="checkbox"
-              checked={filterOptions.XandY}
-              onChange={(e) => handleFilterChange('XandY', e.target.checked)}
+              checked={filterOptions.SunandMoon}
+              onChange={(e) => handleFilterChange('SunandMoon', e.target.checked)}
             />
             <span className="slider"></span>
           </label>

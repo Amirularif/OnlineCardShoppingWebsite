@@ -10,7 +10,7 @@ function Home(homeItems){
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredCard, setFilteredCard] = useState([]);
   const [filterOptions, setFilterOptions] = useState({
-    SwordandShield: false, XandY: false, BlackandWhite: false, ScarletandViolet: false,
+    SwordandShield: false, SunandMoon: false, BlackandWhite: false, ScarletandViolet: false,
     InStock: false, OutofStock: false,
     Condition10: false, Condition9: false, Condition8: false
   });
@@ -22,7 +22,7 @@ function Home(homeItems){
       if (filterOptions.SwordandShield && card.description.includes('Sword and Shield')) {
         return true;
       }
-      if (filterOptions.XandY && card.description.includes('X and Y')) {
+      if (filterOptions.SunandMoon && card.description.includes('Sun and Moon')) {
         return true;
       }
       if (filterOptions.BlackandWhite && card.description.includes('Black and White')) {
