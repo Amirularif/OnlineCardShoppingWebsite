@@ -28,10 +28,32 @@ function CardDetail({ cardsData }) {
   if (similarCards.length >= 3) {
     displayCards = similarCards.slice(0, 3);
   } else if (similarCards.length > 0) {
-    displayCards = cardsData.filter((card) => card.description === clickedCardDescription && card.id !== parseInt(id)).slice(0, similarCards.length);
+    if (similarCards.length === 1) {
+      const sameCard = cardsData.filter(
+        (card) =>
+          card.description === clickedCardDescription &&
+          card.id !== parseInt(id)
+      );
+      const tworandomCard = cardsData
+        .filter(
+          (card) =>
+          card.id !== parseInt(id)
+          ).slice(0, 2);
+      displayCards = sameCard.concat(tworandomCard);
+    } else {
+      const sameCard = cardsData.filter(
+        (card) =>
+          card.description === clickedCardDescription &&
+          card.id !== parseInt(id)
+      );
+      const onerandomCard = cardsData
+        .filter((card) => card.id !== parseInt(id))
+        .slice(0, 1);
+      displayCards = sameCard.concat(onerandomCard);
+    }
   } else {
     displayCards = cardsData
-      .filter((card) => card.id !== parseInt(id)) // Exclude the clicked card
+      .filter((card) => card.id !== parseInt(id)) 
       .slice(0, 3);
   }
 
