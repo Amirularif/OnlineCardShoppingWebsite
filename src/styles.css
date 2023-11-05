@@ -556,8 +556,30 @@ button:hover {
     letter-spacing: 1px;
 }
 
+.recommend-card-container{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.recommend-card-title-container{
+    display: grid;
+    justify-content: space-around;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: 100px;
+    border-bottom: 1px solid #D6D7DC;
+}
+
+.recommend-card-title{
+    font-family: 'TTBackward';
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
 .recommend-card-content-container{
     display: flex;
-    justify-content: flex-start;
-    
+    justify-content: center;
 }
