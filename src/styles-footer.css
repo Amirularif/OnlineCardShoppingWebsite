@@ -20,6 +20,8 @@
 
 .footer-container{
     background-color:#735E59;
+    border-top: 1px solid #D6D7DC;
+    padding-bottom: 2%;
 }
 
 .footer-title-container{
@@ -30,6 +32,7 @@
     margin-top: 1%;
     border-bottom: 1px solid #D6D7DC;
     height: 80px;
+    align-items: center;
 }
 
 .footer-title{
@@ -58,4 +61,32 @@
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
+}
+
+.footer-column-description-container{
+    display: flex;
+    margin-right: 50%;
+}
+
+.footer-column-description{
+    text-align: left;
+    color: white;
+    font-family: 'TTCommonPro';
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.social-icons-container{
+    display: flex;
+    margin-left: 30%;
+    margin-right: 30%;
+    justify-content: center;
+}
+
+.social-icons-container .icon{
+    width: 5%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
 }
