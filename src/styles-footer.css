@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'TTBackward'; 
+    src: url('./fonts/ttbackward.otf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Klandestin';
+    src: url('./fonts/klandestin.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TTCommonPro';
+    src: url('./fonts/ttcommonpro.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GlacialIndifference';
+    src: url('./fonts/GlacialIndifference.otf') format('truetype');
+}
+
+.footer-container{
+    background-color:#735E59;
+}
+
+.footer-title-container{
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    border-bottom: 1px solid #D6D7DC;
+    height: 80px;
+}
+
+.footer-title{
+    justify-self: center;
+    font-family: 'GlacialIndifference';
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: azure;
+}
+
+.footer-columns{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 1%;
+}
+
+.footer-column{
+    justify-self: center;
+}
+
+.footer-column-title{
+    color: white;
+    font-family: 'GlacialIndifference';
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
