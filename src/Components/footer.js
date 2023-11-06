@@ -1,5 +1,9 @@
 import React from 'react';
-import cartIcon from '../icons/cart.png';
+import facebookIcon from '../icons/facebook.png';
+import instagramIcon from '../icons/insta.png';
+import linkedinIcon from '../icons/linkedin.png';
+import twitterIcon from '../icons/twitter.png';
+import whatsappIcon from '../icons/whatsapp.png'
 import '../styles-footer.css'
 
 function Footer() {
@@ -40,11 +44,11 @@ function Footer() {
         </div>
       </div>
       <div className="social-icons-container">
-        <img src={cartIcon} alt="Cart" className="icon" />
-        <img src={cartIcon} alt="Cart" className="icon" />
-        <img src={cartIcon} alt="Cart" className="icon" />
-        <img src={cartIcon} alt="Cart" className="icon" />
-        <img src={cartIcon} alt="Cart" className="icon" />
+        <img src={facebookIcon} alt="Cart" className="icon" />
+        <img src={instagramIcon} alt="Cart" className="icon" />
+        <img src={linkedinIcon} alt="Cart" className="icon" />
+        <img src={twitterIcon} alt="Cart" className="icon" />
+        <img src={whatsappIcon} alt="Cart" className="icon" />
       </div>
     </div>
   );
