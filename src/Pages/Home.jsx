@@ -5,6 +5,7 @@ import Autobiography from '../Components/autobioheader';
 import Filter from '../Components/filter';
 import '../styles.css'; 
 import cardsData from '../cardsData.json';
+import Footer from '../Components/footer';
 
 function Home(homeItems){
   const [searchTerm, setSearchTerm] = useState('');
@@ -101,6 +102,7 @@ function Home(homeItems){
           )}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
