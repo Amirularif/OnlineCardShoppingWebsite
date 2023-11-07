@@ -13,7 +13,7 @@ function Footer() {
   const moreText = "PRIVACY POLICY \n STORE POLICY \n RETURN POLICY \n ABOUT";
 
   return (
-    <div className="footer-container">
+    <div id="contacts" className="footer-container">
       <div className="footer-title-container">
         <p className="footer-title">Evolve the way you collect</p>
       </div>

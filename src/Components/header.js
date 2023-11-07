@@ -11,6 +11,13 @@ function Header({ onSearch, totalItemsInCart }) {
     onSearch(searchTerm);
   };
 
+  const scrollToContacts = () => {
+    const contactsElement = document.getElementById('contacts');
+    if (contactsElement) {
+      contactsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   console.log('Number of items in the cart:', totalItemsInCart);
 
   return (
@@ -26,7 +33,7 @@ function Header({ onSearch, totalItemsInCart }) {
         <div className="menu-item">Graded cards</div>
         <div className="menu-item">Booster boxes</div>
         <div className="menu-item">Mystery packs</div>
-        <div className="menu-item">Contact</div>
+        <a href="#contacts" className="menu-item" onClick={scrollToContacts}>Contacts</a>
       </div>
        <div className="search-bar">
         <input

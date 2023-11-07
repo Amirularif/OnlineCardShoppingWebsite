@@ -70,6 +70,9 @@ body {
 .menu-item {
     margin-right: 20px;
     cursor: pointer;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: #735E59;
 }
 
 .search-bar {
