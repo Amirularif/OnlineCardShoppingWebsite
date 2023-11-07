@@ -14,7 +14,23 @@ function Header({ onSearch, totalItemsInCart }) {
   const scrollToContacts = () => {
     const contactsElement = document.getElementById('contacts');
     if (contactsElement) {
-      contactsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const startPos = window.pageYOffset;
+      const targetPos = contactsElement.offsetTop;
+      const distance = targetPos - startPos;
+      const duration = 500; // Scroll duration in milliseconds
+      const startTime = performance.now();
+  
+      const animateScroll = (currentTime) => {
+        const elapsedTime = currentTime - startTime;
+        const progress = Math.min(elapsedTime / duration, 1); // Ensure progress is between 0 and 1
+        window.scrollTo(0, startPos + distance * progress);
+  
+        if (progress < 1) {
+          requestAnimationFrame(animateScroll);
+        }
+      };
+  
+      requestAnimationFrame(animateScroll);
     }
   };
 
