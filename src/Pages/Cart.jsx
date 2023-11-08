@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import TotalPrice from '../Components/totalprice';
 import Header from '../Components/header';
 import Footer from '../Components/footer';
-import '../styles.css'; 
+import '../styles-cart.css';
+import '../styles-header.css'; 
 
 function Cart({ cartItems, onRemoveFromCart }) {
 

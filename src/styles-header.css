@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'TTBackward'; 
+    src: url('./fonts/ttbackward.otf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Klandestin';
+    src: url('./fonts/klandestin.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TTCommonPro';
+    src: url('./fonts/ttcommonpro.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GlacialIndifference';
+    src: url('./fonts/GlacialIndifference.otf') format('truetype');
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    background-color: #FFFF;
+    color: #735E59;
+    padding: 10px 20px;
+    border-bottom: 2px solid #735E59;
+    height: 100px;
+}
+  
+.logo-container {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #735E59;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 10px;
+}
+  
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.title-container {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.title-container h1 {
+    font-family: 'TTBackward', sans-serif; 
+    font-size: 50px;
+}
+
+.menu-container {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 45px;
+}
+  
+.menu-item {
+    margin-right: 20px;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: #735E59;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 35px;
+    margin-right: 10px; 
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .search-bar button {
+    background-color: #735E59;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+.icon-container{
+    margin-top: 35px;
+    margin-right: 20px;
+}
+
+.icon-container .icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.cart-indicator {
+    background-color: #735E59;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 6px;
+    position: absolute;
+    top: 55px;
+    right: 82px;
+}

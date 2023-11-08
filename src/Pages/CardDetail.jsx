@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Header from '../Components/header';
 import Card from '../Components/card';
 import Footer from '../Components/footer';
+import '../styles-header.css';
 
 function CardDetail({ cardsData }) {
   const { id } = useParams();
@@ -67,9 +68,10 @@ function CardDetail({ cardsData }) {
         </div>
         <div className="card-detail-right-container">
           <p className="card-detail-name">{card.title} {card.name} {card.rarity} {card.code} {card.set}</p>
-          <p>{card.description}</p>
-          <p>Stock: {card.stock}</p>
-          <p>Price: ${card.price.toFixed(2)}</p>
+          <p className="card-detail-description">{card.description}</p>
+          <p className="card-detail-stock">Stock: {card.stock}</p>
+          <p className="card-detail-condition">Condition {card.condition}</p>
+          <p className="card-detail-price">Price: ${card.price.toFixed(2)}</p>
           <div className="buttons-container">
             <button onClick={handleAddToCart}>Add to Cart</button>
             <button onClick={handleBuyNow}>Buy Now</button>

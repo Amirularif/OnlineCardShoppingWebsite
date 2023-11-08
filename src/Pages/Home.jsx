@@ -4,6 +4,7 @@ import Card from '../Components/card';
 import Autobiography from '../Components/autobioheader';
 import Filter from '../Components/filter';
 import '../styles.css'; 
+import '../styles-header.css';
 import cardsData from '../cardsData.json';
 import Footer from '../Components/footer';
 

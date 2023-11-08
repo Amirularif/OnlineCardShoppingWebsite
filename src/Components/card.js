@@ -2,10 +2,10 @@ import React from 'react';
 import '../styles.css';
 import { Link } from 'react-router-dom';
 
-function Card({ id,title, name, description, stock, price, onAddToCart, image, code, set, rarity }) {
+function Card({ id,title, name, description, stock, price, onAddToCart, image, code, set, rarity, condition }) {
   const handleAddToCart = () => {
     console.log('Adding item to cart:', { id,title, name, description, price, image, code, set, rarity });
-    onAddToCart({ id,title, name, description,stock, price, image, code, set, rarity });
+    onAddToCart({ id,title, name, description,stock, price, image, code, set, rarity, condition });
   };
 
   return (
