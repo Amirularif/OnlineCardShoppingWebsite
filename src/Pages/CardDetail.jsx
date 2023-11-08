@@ -4,6 +4,7 @@ import Header from '../Components/header';
 import Card from '../Components/card';
 import Footer from '../Components/footer';
 import '../styles-header.css';
+import '../styles-card-detail.css';
 
 function CardDetail({ cardsData }) {
   const { id } = useParams();
@@ -73,8 +74,8 @@ function CardDetail({ cardsData }) {
           <p className="card-detail-condition">Condition {card.condition}</p>
           <p className="card-detail-price">Price: ${card.price.toFixed(2)}</p>
           <div className="buttons-container">
-            <button onClick={handleAddToCart}>Add to Cart</button>
-            <button onClick={handleBuyNow}>Buy Now</button>
+            <button className="card-detail-addtocart-btn" onClick={handleAddToCart}>Add to Cart</button>
+            <button className="card-detail-buynow-btn" onClick={handleBuyNow}>Buy Now</button>
           </div>
         </div>
       </div>
