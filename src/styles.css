@@ -291,7 +291,8 @@ body {
     margin-bottom: 30px;
     margin-left: 25px;
     margin-right: 25px;
-    width: 245px;   
+    width: 245px;
+    height: 509px;   
 }
 
 .card:hover {
