@@ -28,8 +28,8 @@ function CardDetail({ cardsData }) {
 
   let displayCards;
 
-  if (similarCards.length >= 3) {
-    displayCards = similarCards.slice(0, 3);
+  if (similarCards.length >=5) {
+    displayCards = similarCards.slice(0, 5);
   } else if (similarCards.length > 0) {
     if (similarCards.length === 1) {
       const sameCard = cardsData.filter(
@@ -37,13 +37,36 @@ function CardDetail({ cardsData }) {
           card.description === clickedCardDescription &&
           card.id !== parseInt(id)
       );
-      const tworandomCard = cardsData
+      const fourrandomCard = cardsData
         .filter(
           (card) =>
           card.id !== parseInt(id)
-          ).slice(0, 2);
+          ).slice(0, 4);
+      displayCards = sameCard.concat(fourrandomCard);
+
+    } else if(similarCards.length === 2){
+      const sameCard = cardsData.filter(
+        (card) =>
+          card.description === clickedCardDescription &&
+          card.id !== parseInt(id)
+      );
+      const threerandomCard = cardsData
+        .filter((card) => card.id !== parseInt(id))
+        .slice(0, 3);
+      displayCards = sameCard.concat(threerandomCard);
+
+    } else if(similarCards.length === 3){
+      const sameCard = cardsData.filter(
+        (card) =>
+          card.description === clickedCardDescription &&
+          card.id !== parseInt(id)
+      );
+      const tworandomCard = cardsData
+        .filter((card) => card.id !== parseInt(id))
+        .slice(0, 2);
       displayCards = sameCard.concat(tworandomCard);
-    } else {
+
+    } else if(similarCards.length === 4){
       const sameCard = cardsData.filter(
         (card) =>
           card.description === clickedCardDescription &&
@@ -53,11 +76,11 @@ function CardDetail({ cardsData }) {
         .filter((card) => card.id !== parseInt(id))
         .slice(0, 1);
       displayCards = sameCard.concat(onerandomCard);
-    }
+    } 
   } else {
     displayCards = cardsData
       .filter((card) => card.id !== parseInt(id)) 
-      .slice(0, 3);
+      .slice(0, 5);
   }
 
   return (

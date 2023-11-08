@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles.css';
 
 function Filter({ filterOptions, onFilterChange }) {
-  const SortbyText = " SORT : ";
+  const SortbyText = " FILTER: ";
 
   const handleFilterChange = (filterName, isChecked) => {
     onFilterChange(filterName, isChecked);
