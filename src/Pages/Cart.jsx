@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import TotalPrice from '../Components/totalprice';
 import Header from '../Components/header';
+import Footer from '../Components/footer';
 import '../styles.css'; 
 
 function Cart({ cartItems, onRemoveFromCart }) {
@@ -84,6 +85,7 @@ function Cart({ cartItems, onRemoveFromCart }) {
           </div>
         </div>
       </div>
+      <Footer />
     </div> 
   );
 }

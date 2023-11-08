@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Header from '../Components/header';
 import Card from '../Components/card';
+import Footer from '../Components/footer';
 
 function CardDetail({ cardsData }) {
   const { id } = useParams();
@@ -100,6 +101,7 @@ function CardDetail({ cardsData }) {
         ))}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
