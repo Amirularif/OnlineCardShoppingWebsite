@@ -48,7 +48,7 @@ function Cart({ cartItems, onRemoveFromCart }) {
           {cartItems.map((item, index) => (
             <div className="cart-item" key={index}>
               <div className="cart-item-left-container">
-                <img src={require(`../images/${item.image}`)} alt={item.name} className="cart-item-image" />
+                <img src={require(`../images/singles${item.image}`)} alt={item.name} className="cart-item-image" />
               </div>
               <div className="cart-item-middleleft-container">
                 <div className="cart-items-name-description">

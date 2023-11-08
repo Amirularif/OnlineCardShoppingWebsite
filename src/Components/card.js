@@ -11,7 +11,7 @@ function Card({ id,title, name, description, stock, price, onAddToCart, image, c
   return (
     <div className="card"> 
       <Link to={`/card/${id}`}>
-        <img src={require(`../images/${image}`)} alt={name} className="card-image"/>
+        <img src={require(`../images/singles/${image}`)} alt={name} className="card-image"/>
       </Link>
       <div className="card-details">
         <div className="name-container">

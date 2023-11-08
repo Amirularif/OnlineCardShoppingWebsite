@@ -62,7 +62,7 @@ function CardDetail({ cardsData }) {
       <Header/>
       <div className="card-detail-container">
         <div className="card-detail-left-container">
-          <img src={require(`../images/${card.image}`)} alt={card.name} className="card-detail-image" />
+          <img src={require(`../images/singles/${card.image}`)} alt={card.name} className="card-detail-image" />
         </div>
         <div className="card-detail-right-container">
           <p className="card-detail-name">{card.title} {card.name} {card.rarity} {card.code} {card.set}</p>
