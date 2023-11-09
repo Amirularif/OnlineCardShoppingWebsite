@@ -19,168 +19,15 @@
     src: url('./fonts/GlacialIndifference.otf') format('truetype');
 }
 
-body {
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
-}
- 
-.autobiography-section {
-    display: flex;
-    height: 400px;
-    width: 100%;
-    background-color: #f2f2f2; /*#E7DFD8*/
-    padding: 10px;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #735E59;
-}
-
-.autobiography-text {
-    width: 40%;
-    text-align: center;
-    margin-left: 170px;
-}
-
-.autobio-header{
-    font-family: "Wanoquin";
-    font-size: 60px;
-    color: #4c3e3a;
-    padding: 5px;
-    border-bottom: 1px solid #4c3e3a;
-}
-
-.autobio-description{
-    font-family: "TTCommonPro";
-    color: #4c3e3a;
-    margin-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 10px;
-    font-size: 30px;
-}
-
-.autobio-code{
-    font-family: "TTBackward";
-    font-size: 40px;
-    font-weight: bold;
-    color: #4c3e3a;
-    margin-top: 40px;
-}
-  
-.autobiography-image img {
-    margin-right: 170px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 520px; 
-    height: auto;
-}
-
-.content-container {
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 20% 80%;
-    justify-content: space-between;
-}
-  
-.filter-container {
-   margin-top: 50px;
-   margin-left: 20px;
-   margin-right: 10px;
-   margin-bottom: 30%;
-}
-
-.filter-header {
-    font-family: "GlacialIndifference";
-    font-size: 25px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    color: #343333;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin-left: 5px;
-}
-
-.filter-group{
-    text-align: left;
-    border-top: 1px solid #D6D7DC;
-    margin: 5px;
-    padding: 5px;
-}
-
-.filter-title{
-    font-family: "GlacialIndifference";
-    font-size: 25px;
-    margin-left: 5px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #343333;
-    margin-top: 10px;
-}
-
-.filter-item{
-    display: grid;
-    grid-template-columns: 80% 20%;
-    justify-content:space-evenly;
-    font-family: "GlacialIndifference";
-    font-size: 20px;
-    letter-spacing: 1px;
-    color: #525151;
-    margin: 20px 10px 10px 5px;
-}
-
-.toggle-switch {
-    position: relative;
-    display: inline-block;
-    width: 42px;
-    height: 24px;
-}
-  
-.toggle-switch input {
-    display: none;
-}
-  
-.toggle-switch .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: 0.4s;
-    border-radius: 34px;
-}
-  
-.toggle-switch input:checked + .slider {
-    background-color: #343333;
-}
-  
-.toggle-switch .slider::before {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: 0.4s;
-    border-radius: 50%;
-}
-  
-.toggle-switch input:checked + .slider::before {
-    transform: translateX(18px);
-}
-
 .card-container {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     padding: 15px;
     margin-left: 10px;
-    margin-bottom: 10%;
 }
   
-.card {
+.graded-card {
     display: grid;
     justify-content: center;
     background-color: #F8F4F4; /* Grey section at the top */
@@ -195,14 +42,14 @@ body {
     margin-left: 25px;
     margin-right: 25px;
     width: 245px;
-    height: 509px;   
+    height: 555px;   
 }
 
-.card:hover {
+.graded-card:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
   
-.card img {
+.graded-card img {
     width: 180px;
     height: auto;
     object-fit: cover;

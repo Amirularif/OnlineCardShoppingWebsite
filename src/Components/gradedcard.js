@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles.css';
+import '../styles-graded-card.css'
 import { Link } from 'react-router-dom';
 
 function GradedCard({ id,title, name, description, stock, price, onAddToCart, image, code, set, rarity, condition }) {
@@ -9,7 +10,7 @@ function GradedCard({ id,title, name, description, stock, price, onAddToCart, im
   };
 
   return (
-    <div className="card"> 
+    <div className="graded-card"> 
       <Link to={`/card/${id}`}>
         <img src={require(`../images/graded/${image}`)} alt={name} className="card-image"/>
       </Link>
