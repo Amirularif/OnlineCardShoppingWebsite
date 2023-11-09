@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import Cart from './Pages/Cart';
 import CardDetail from './Pages/CardDetail';
 import cardsData from './cardsData.json';
+import GradedCards from './Pages/GradedCard';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home cartItems={cartItems} setCartItems={setCartItems}e  />} />
         <Route path="/cart" element={<Cart cartItems={cartItems} onRemoveFromCart={handleRemoveFromCart}/>} />
         <Route path="/card/:id" element={<CardDetail cardsData={cardsData} />} />
+        <Route path="/gradedcard" element={<GradedCards cartItems={cartItems} setCartItems={setCartItems}e  />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>

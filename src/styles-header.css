@@ -61,12 +61,17 @@
     margin-left: 20px;
     margin-top: 45px;
 }
+
+.Link {
+    text-decoration: none;
+    color: inherit; /* Preserve the parent element's color */
+}
   
 .menu-item {
     margin-right: 20px;
     cursor: pointer;
     scroll-behavior: smooth;
-    text-decoration: none;
+    text-decoration: none !important;
     color: #735E59;
 }
 

@@ -3,6 +3,7 @@ import logo from '../images/headerlogo.png';
 import cartIcon from '../icons/cart.png'
 import profileIcon from '../icons/profile.png'
 import { Link } from "react-router-dom";
+import '../styles-header.css'
 
 function Header({ onSearch, totalItemsInCart }) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -46,7 +47,9 @@ function Header({ onSearch, totalItemsInCart }) {
       </div>
       <div className="menu-container">
         <div className="menu-item">Singles card</div>
-        <div className="menu-item">Graded cards</div>
+          <Link to="/gradedcard" className="Link">
+            <div className="menu-item">Graded card</div>
+          </Link>
         <div className="menu-item">Booster boxes</div>
         <div className="menu-item">Mystery packs</div>
         <a href="#contacts" className="menu-item" onClick={scrollToContacts}>Contacts</a>
