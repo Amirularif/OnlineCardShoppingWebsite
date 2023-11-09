@@ -4,7 +4,7 @@ import Home from './Pages/Home';
 import Cart from './Pages/Cart';
 import CardDetail from './Pages/CardDetail';
 import cardsData from './cardsData.json';
-import GradedCards from './Pages/GradedCard';
+import GradedCards from './Pages/GradedCardPage';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);

@@ -1,12 +1,12 @@
 import React,{useState,useEffect} from 'react';
 import Header from '../Components/header';
-import Card from '../Components/card';
 import Autobiography from '../Components/autobioheader';
 import Filter from '../Components/filter';
 import '../styles.css'; 
 import '../styles-header.css';
-import cardsData from '../cardsData.json';
+import cardsData from '../gradedcardsData.json';
 import Footer from '../Components/footer';
+import GradedCard from '../Components/gradedcard';
 
 function GradedCards(homeItems){
   const [searchTerm, setSearchTerm] = useState('');
@@ -68,7 +68,7 @@ function GradedCards(homeItems){
         <div className="card-container">
         {filteredCard.length > 0 ? (
           filteredCard.map((card) => (
-            <Card
+            <GradedCard
               id={card.id} 
               title={card.title}
               name={card.name}
@@ -86,7 +86,7 @@ function GradedCards(homeItems){
           <div className="no-result">No result</div>
         ) : (
           cardsData.map((card) => (
-            <Card
+            <GradedCard
               id={card.id}
               title={card.title} 
               name={card.name}
