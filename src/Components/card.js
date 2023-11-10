@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles.css';
 import { Link } from 'react-router-dom';
 
 function Card({ id,title, name, description, stock, price, onAddToCart, image, code, set, rarity, condition }) {
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const handleAddToCart = () => {
     console.log('Adding item to cart:', { id,title, name, description, price, image, code, set, rarity });
     onAddToCart({ id,title, name, description,stock, price, image, code, set, rarity, condition });
+    
+    setShowSuccessMessage(true);
+
+    setTimeout(() => {
+      setShowSuccessMessage(false);
+    }, 3000);
   };
 
   return (
@@ -29,6 +36,10 @@ function Card({ id,title, name, description, stock, price, onAddToCart, image, c
         <button className="addtocartbtn" onClick={handleAddToCart}>
           Add to Cart
         </button>
+        {showSuccessMessage && (
+          <div className="success-message">
+            Successfully added to cart!
+          </div>)}
       </div>
     </div> 
   );

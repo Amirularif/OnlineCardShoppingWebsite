@@ -296,3 +296,14 @@ body {
 button:hover {
     background-color: #4c3e3a;
 }
+
+.success-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(30, 31, 30, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 999; /* Ensure the message appears above other elements */
+  }
