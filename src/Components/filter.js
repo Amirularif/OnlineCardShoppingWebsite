@@ -1,4 +1,6 @@
 import React from 'react';
+import Slider from 'rc-slider';
+import "rc-slider/assets/index.css";
 import '../styles.css';
 
 function Filter({ filterOptions, onFilterChange }) {
@@ -120,6 +122,12 @@ function Filter({ filterOptions, onFilterChange }) {
               />
               <span className="slider"></span>
           </label>
+        </div>
+      </div>
+      <div className="filter-group">
+        <div className="filter-title">Price</div>
+        <div className="filter-item">
+          <Slider/>
         </div>
       </div>
     </div>
