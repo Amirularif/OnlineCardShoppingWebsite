@@ -6,7 +6,7 @@ import '../styles-cart.css';
 import '../styles-header.css'; 
 
 function Cart({ cartItems, onRemoveFromCart }) {
-
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [multipliers, setMultipliers] = useState({});
   const ShoppingCartText = "Shopping Cart";
 
@@ -15,6 +15,12 @@ function Cart({ cartItems, onRemoveFromCart }) {
   }
 
   const handleRemoveClick = (item) => {
+    setShowSuccessMessage(true);
+
+    setTimeout(() => {
+      setShowSuccessMessage(false);
+    }, 3000);
+
     onRemoveFromCart(item);
   };
 
@@ -74,7 +80,13 @@ function Cart({ cartItems, onRemoveFromCart }) {
                 </div>
               </div>
               <div className="cart-items-right-container">
-                <button className="cart-item-remove-button" onClick={() => handleRemoveClick(item)}>X</button>
+                <button className="cart-item-remove-button" onClick={() => handleRemoveClick(item)}>
+                  X
+                </button>
+                {showSuccessMessage && (
+                  <div className="success-message">
+                    Removed from cart!
+                  </div>)}
                 <div className="cart-item-price">${calculatePrice(item)}</div>
               </div>
             </div>

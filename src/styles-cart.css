@@ -124,11 +124,15 @@
     background-color: #343333;
     color: white;
     font-size: 15px;
-    border-radius: 50%;
+    border-radius: 30%;
     margin-left: 80%;
     margin-top: 5%;
     justify-self: flex-end;
     cursor: pointer;
+}
+
+.cart-item-remove-button:hover {
+    background-color: #080808;
 }
 
 .cart-total-price-container{
@@ -144,4 +148,15 @@
     margin-right: 20px;
     font-family: 'GlacialIndifference';
     font-size: 30px;
+}
+
+.success-message {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(30, 31, 30, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 999; /* Ensure the message appears above other elements */
 }
