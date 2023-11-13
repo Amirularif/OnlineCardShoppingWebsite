@@ -94,8 +94,9 @@ function Cart({ cartItems, onRemoveFromCart }) {
         </div>
         <div className="cart-total-price-container">
           <div className="total-price">
-            <TotalPrice totalPrice={totalPrice} />
+            <TotalPrice totalPrice = {totalPrice} />
           </div>
+          <button className="cart-total-checkout-btn">Checkout</button>
         </div>
       </div>
       <Footer />

@@ -23,18 +23,19 @@
     flex-direction: column;
     height: 100%;
     justify-content: right;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 20px;
 }   
 
 .cart-container-header{
-    font-family: 'TTCommonPro';
+    font-family: 'GlacialIndifference';
     font-size: 35px;
     font-weight: bold;
-    color: #4c3e3a;
+    color: #2F2838;
     padding: 5px;
-    /*border-bottom: 1px solid #4c3e3a;*/
+    border-bottom: 1px solid #D6D7DC;
+    margin-top: 2%;
     padding-bottom: 10px;
 }
 
@@ -43,6 +44,7 @@
     grid-template-columns: 18% 42% 10% 30%;
     justify-content: space-between;
     height: 250px;
+    margin-top: 2%;
     margin-bottom: 20px;
     background-color: #F8F4F4; /* Grey section at the top */
     border-radius: 10px;
@@ -58,9 +60,9 @@
     width: 159px;
     height: 220px;
     object-fit: cover;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-right: 5%;
-    margin-top: 6%;
+    margin-top: 8%;
     margin-bottom: 8%;
 }
 
@@ -137,17 +139,41 @@
 
 .cart-total-price-container{
     display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: flex-end;
     align-self: flex-end;
-    border-top: 1px solid #D6D7DC;
+    align-items: flex-end;
+    margin-bottom: 2%;
 }
 
 .cart-total-price-container .total-price{
-    margin-top: 20px;
+    margin-top: 10px;
     margin-right: 20px;
+    margin-bottom: 10px;
     font-family: 'GlacialIndifference';
     font-size: 30px;
+    font-weight: bold;
+}
+
+.cart-total-checkout-btn{
+    background-color: #2F2838;
+    width: 22%;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.cart-total-checkout-btn:hover {
+    background-color: #0a090c;
 }
 
 .success-message {
