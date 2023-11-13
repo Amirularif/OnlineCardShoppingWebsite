@@ -41,7 +41,7 @@
 
 .cart-item{
     display: grid;
-    grid-template-columns: 18% 42% 10% 30%;
+    grid-template-columns: 18% 50% 10% 22%;
     justify-content: space-between;
     height: 250px;
     margin-top: 2%;

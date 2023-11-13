@@ -79,6 +79,7 @@ function Home(homeItems){
               rarity={card.rarity}
               code={card.code}
               set={card.set}
+              condition={card.condition}
               onAddToCart={handleAddToCart}
             />
           ))
@@ -97,6 +98,7 @@ function Home(homeItems){
               rarity={card.rarity}
               code={card.code}
               set={card.set}
+              condition={card.condition}
               onAddToCart={handleAddToCart}
             />
             ))
