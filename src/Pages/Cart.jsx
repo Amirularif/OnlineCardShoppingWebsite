@@ -9,6 +9,7 @@ function Cart({ cartItems, onRemoveFromCart }) {
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [multipliers, setMultipliers] = useState({});
   const ShoppingCartText = "Shopping Cart";
+  const cartItemCount = cartItems.reduce((total, item) => total + (multipliers[item.id] || 1), 0) + " items";
 
   if (!cartItems) {
     return <div className="cart-container">Cart is empty</div>;
@@ -50,7 +51,7 @@ function Cart({ cartItems, onRemoveFromCart }) {
       <Header/>
       <div className="cart-container">
         <div className="cart-container-header">
-          {ShoppingCartText}
+          {ShoppingCartText} {cartItemCount}
         </div>
         <div className="cart-items-container">
           {cartItems.map((item, index) => (
