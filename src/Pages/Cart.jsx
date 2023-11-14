@@ -51,7 +51,12 @@ function Cart({ cartItems, onRemoveFromCart }) {
       <Header/>
       <div className="cart-container">
         <div className="cart-container-header">
-          {ShoppingCartText} {cartItemCount}
+          <div className="cart-container-shoppingtext">
+            {ShoppingCartText}
+          </div>
+          <div className="cart-container-itemcounttext">
+            {cartItemCount}
+          </div>
         </div>
         <div className="cart-items-container">
           {cartItems.map((item, index) => (

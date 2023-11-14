@@ -29,6 +29,8 @@
 }   
 
 .cart-container-header{
+    display: flex;
+    justify-content: space-between;
     font-family: 'GlacialIndifference';
     font-size: 35px;
     font-weight: bold;
