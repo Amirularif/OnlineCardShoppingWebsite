@@ -62,7 +62,7 @@ function Cart({ cartItems, onRemoveFromCart }) {
                 <div className="cart-items-name-description">
                   <p className="name">{item.title} {item.name} {item.rarity} {item.code} {item.set}</p>
                   <p className="description">{item.description}</p>
-                  <p className="condition">{item.condition}</p>
+                  <p className="condition">Condition {item.condition}</p>
                   <p className="price">{item.price}</p>
                 </div>
               </div>

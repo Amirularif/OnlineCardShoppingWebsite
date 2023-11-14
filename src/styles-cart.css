@@ -78,7 +78,7 @@
 }
 
 .cart-item-dropdown-container{
-    margin-top: 65%;
+    margin-top: 95%;
     margin-left: 20%;
 }
 
@@ -98,24 +98,41 @@
     font-weight: bold;
     font-size: 30px;
     letter-spacing: 1px;
+    margin-bottom: 2%;
 }
 
 .cart-items-name-description .description{
     font-family: 'GlacialIndefference';
     font-size: 20px;
     letter-spacing: 1px;
+    margin-top: 2%;
+}
+
+.cart-items-name-description .condition{
+    font-family: 'GlacialIndefference';
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 2%;
+}
+
+.cart-items-name-description .price{
+    font-family: 'GlacialIndefference';
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 2%;
 }
 
 .cart-items-right-container{
     height: 100%;
-    background-color: white; /* White section at the bottom */
+    background-color: white; 
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 .cart-item-price{
-    margin-top: 10%;
-    margin-left: 10%;
+    margin-top: 22%;
+    margin-left: 18%;
     font-family: 'TTBackward';
     font-weight: bold;
     font-size: 50px;
@@ -127,8 +144,8 @@
     color: white;
     font-size: 15px;
     border-radius: 30%;
-    margin-left: 80%;
-    margin-top: 5%;
+    margin-left: 84%;
+    margin-top: 6%;
     justify-self: flex-end;
     cursor: pointer;
 }
