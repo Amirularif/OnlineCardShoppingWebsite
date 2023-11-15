@@ -21,9 +21,10 @@
 .card-detail-container{
     display: grid;
     grid-template-columns: 35% 65%;
+    width: 70%;
     margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
     background-color: #F8F4F4; /* Grey section at the top */
     border-radius: 10px;
     border: 1px solid #D6D7DC;
@@ -55,29 +56,65 @@
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-left: 2%;
-    margin-right: 35%;
+    margin-left: 5%;
+    margin-right: 8%;
 }
 
-.card-detail-description{
+.card-detail-description-and-buttons-container{
+    display: grid;  
+    grid-template-columns: 85% 10% 10%;
+    align-items: end;
+    margin-right: 11%;
+    margin-left: 5%;
+}
+
+.card-detail-description-and-buttons-container .card-detail-description{
     font-family: 'GlacialIndifference';
     font-size: 20px;
     letter-spacing: 1px;
-    margin-left: 2%;
+    margin-bottom: 1%;
+}
+
+.card-detail-description-and-buttons-container .like-button{
+    background-color: #5271FF;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 10px;
+    cursor: pointer;
+    width: 90%;
+    height: 40%;
+    margin-right: 5%;
+}
+
+.card-detail-description-and-buttons-container .share-button{
+    background-color: #B8B9BB;
+    color: black;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 10px;
+    cursor: pointer;
+    width: 90%;
+    height: 40%;
+    margin-left: 5%;
 }
 
 .card-detail-stock{
     font-family: 'GlacialIndifference';
     font-size: 20px;
     letter-spacing: 1px;
-    margin-left: 2%;
+    margin-left: 5%;
 }
 
 .card-detail-condition{
     font-family: 'GlacialIndifference';
     font-size: 20px;
     letter-spacing: 1px;
-    margin-left: 2%;
+    margin-left: 5%;
 }
 
 .card-detail-price{
@@ -85,10 +122,11 @@
     font-size: 45px;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-left: 2%;
+    margin-left: 5%;
 }
 
 .buttons-container{
+    margin-left: 2%;
     margin-bottom: 5%;
     display: grid;
     grid-template-columns: 50% 50%;

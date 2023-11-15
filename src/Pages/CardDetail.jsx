@@ -92,7 +92,11 @@ function CardDetail({ cardsData }) {
         </div>
         <div className="card-detail-right-container">
           <p className="card-detail-name">{card.title} {card.name} {card.rarity} {card.code} {card.set}</p>
-          <p className="card-detail-description">{card.description}</p>
+          <div className="card-detail-description-and-buttons-container">
+            <p className="card-detail-description">{card.description}</p>
+            <button className="like-button">LIKE</button>
+            <button className="share-button">SHARE</button>
+          </div>
           <p className="card-detail-stock">Stock: {card.stock}</p>
           <p className="card-detail-condition">Condition {card.condition}</p>
           <p className="card-detail-price">Price: ${card.price.toFixed(2)}</p>
