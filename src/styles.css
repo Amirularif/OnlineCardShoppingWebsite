@@ -32,7 +32,7 @@ body {
     padding: 10px;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #735E59;
+    border-bottom: 2px solid #2F2838;
 }
 
 .autobiography-text {
@@ -44,14 +44,14 @@ body {
 .autobio-header{
     font-family: "Wanoquin";
     font-size: 60px;
-    color: #4c3e3a;
+    color: #2F2838;
     padding: 5px;
-    border-bottom: 1px solid #4c3e3a;
+    border-bottom: 1px solid #2F2838;
 }
 
 .autobio-description{
     font-family: "TTCommonPro";
-    color: #4c3e3a;
+    color: #2F2838;
     margin-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
@@ -63,7 +63,7 @@ body {
     font-family: "TTBackward";
     font-size: 40px;
     font-weight: bold;
-    color: #4c3e3a;
+    color: #2F2838;
     margin-top: 40px;
 }
   
@@ -294,7 +294,7 @@ body {
 }
   
 button:hover {
-    background-color: #4c3e3a;
+    background-color: #2F2838;
 }
 
 .success-message {

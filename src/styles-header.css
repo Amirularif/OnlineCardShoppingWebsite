@@ -23,9 +23,9 @@
     align-items: center;
     justify-content:left;
     background-color: #FFFF;
-    color: #735E59;
+    color: #2F2838;
     padding: 10px 20px;
-    border-bottom: 2px solid #735E59;
+    border-bottom: 2px solid #2F2838;
     height: 100px;
 }
   
@@ -71,7 +71,7 @@
     cursor: pointer;
     scroll-behavior: smooth;
     text-decoration: none !important;
-    color: #735E59;
+    color: #2F2838;
 }
 
 .search-bar {
@@ -90,13 +90,17 @@
   }
   
   .search-bar button {
-    background-color: #735E59;
+    background-color: #555657;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 14px;
   }
+
+  .search-bar button:hover {
+    background-color: #2F2838;
+}
 
 .icon-container{
     margin-top: 35px;
@@ -111,7 +115,7 @@
 }
 
 .cart-indicator {
-    background-color: #735E59;
+    background-color: #2F2838;
     color: white;
     font-size: 12px;
     border-radius: 50%;
