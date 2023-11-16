@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../images/headerlogo.png';
+import logo from '../images/Pikachu.png';
 import cartIcon from '../icons/cart.png'
 import profileIcon from '../icons/profile.png'
 import { Link } from "react-router-dom";
@@ -41,9 +41,6 @@ function Header({ onSearch, totalItemsInCart }) {
     <div className="header">
       <div className='logo-container'>
         <img src={logo} alt="headerlogo" className="logo" />
-      </div>
-      <div className="title-container">
-        <h1>James Pokemon Store</h1>
       </div>
       <div className="menu-container">
         <div className="menu-item">Singles card</div>
