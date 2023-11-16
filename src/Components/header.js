@@ -40,7 +40,9 @@ function Header({ onSearch, totalItemsInCart }) {
   return (
     <div className="header">
       <div className='logo-container'>
-        <img src={logo} alt="headerlogo" className="logo" />
+        <Link to ="/" className="Link">
+          <img src={logo} alt="headerlogo" className="logo" />
+        </Link>
       </div>
       <div className="menu-container">
         <div className="menu-item">Singles card</div>
