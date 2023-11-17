@@ -309,6 +309,7 @@ button:hover {
 }
 
 @media (max-width: 850px) {
+
     body {
         font-family: Arial, sans-serif;
         scroll-behavior: smooth;
@@ -381,7 +382,7 @@ button:hover {
     
     .filter-header {
         font-family: "GlacialIndifference";
-        font-size: 25px;
+        font-size: 10px;
         font-weight: bold;
         letter-spacing: 3px;
         color: #343333;
@@ -399,7 +400,7 @@ button:hover {
     
     .filter-title{
         font-family: "GlacialIndifference";
-        font-size: 25px;
+        font-size: 10px;
         margin-left: 5px;
         font-weight: bold;
         letter-spacing: 1px;
@@ -412,7 +413,7 @@ button:hover {
         grid-template-columns: 80% 20%;
         justify-content:space-evenly;
         font-family: "GlacialIndifference";
-        font-size: 20px;
+        font-size: 8px;
         letter-spacing: 1px;
         color: #525151;
         margin: 20px 10px 10px 5px;
@@ -421,8 +422,8 @@ button:hover {
     .toggle-switch {
         position: relative;
         display: inline-block;
-        width: 42px;
-        height: 24px;
+        width: 21px;
+        height: 12px;
     }
       
     .toggle-switch input {
@@ -448,17 +449,17 @@ button:hover {
     .toggle-switch .slider::before {
         position: absolute;
         content: "";
-        height: 16px;
-        width: 16px;
-        left: 4px;
-        bottom: 4px;
+        height: 8px;
+        width: 8px;
+        left: 2px;
+        bottom: 2px;
         background-color: white;
         transition: 0.4s;
         border-radius: 50%;
     }
       
     .toggle-switch input:checked + .slider::before {
-        transform: translateX(18px);
+        transform: translateX(9px);
     }
     
     .card-container {
@@ -473,19 +474,19 @@ button:hover {
     .card {
         display: grid;
         justify-content: center;
-        background-color: #F8F4F4; /* Grey section at the top */
+        background-color: #F8F4F4; 
         border-radius: 10px;
         border: 1px solid #D6D7DC;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
         overflow: hidden; /* Clip rounded corners */
         position: relative;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        margin-left: 25px;
-        margin-right: 25px;
-        width: 245px;
-        height: 509px;   
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 12px;
+        margin-right: 12px;
+        width: 150px;
+        height: 250px;   
     }
     
     .card:hover {
@@ -493,25 +494,17 @@ button:hover {
     }
       
     .card img {
-        width: 180px;
+        width: 90px;
         height: auto;
         object-fit: cover;
-        margin-left: 13%;
+        margin-left: 6%;
         margin-top: 10%;
         margin-bottom: 10px;
     }
       
     .card-details {
-        width: 235px;
-        height: 207px;
-        justify-content: space-between;
-        align-items: flex-start;
-        background-color: white; /* White section at the bottom */
-        padding: 5px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border-top: 1px solid #D6D7DC;
-        font-family: 'GlacialIndifference';
+        width: 170px;
+        height: 100px;
     }
     
     .name-container{
@@ -524,7 +517,7 @@ button:hover {
         margin-left: 5px;
         margin-right: 5px;
         text-align: left;
-        font-size: 15px;
+        font-size: 10px;
         padding: 2px;
         font-weight: bolder;
     }
@@ -558,7 +551,7 @@ button:hover {
         margin-top: 10%;
         margin-right: 15%;
         font-family: 'TTBackward';
-        font-size: 35px;
+        font-size: 17px;
         font-weight: bold;
         text-align: right;
     }
