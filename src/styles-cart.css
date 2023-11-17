@@ -205,3 +205,51 @@
     border-radius: 5px;
     z-index: 999; /* Ensure the message appears above other elements */
 }
+
+@media (max-width: 850px) {
+    .cart-container {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+    .cart-item {
+      grid-template-columns: 40% 50% 10%;
+      height: auto;
+    }
+  
+    .cart-item-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 8%;
+      margin-bottom: 8%;
+    }
+  
+    .cart-items-name-description {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+    .cart-item-right-container {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  
+    .cart-item-price {
+      margin-top: 0;
+      margin-left: 0;
+      font-size: 30px;
+    }
+  
+    .cart-item-remove-button {
+      margin-left: 78%;
+      margin-top: 2%;
+    }
+  
+    .cart-total-checkout-btn {
+      width: 100%;
+      margin-right: 0;
+    }
+  }

@@ -124,3 +124,110 @@
     top: 55px;
     right: 82px;
 }
+
+@media (max-width: 950px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content:left;
+        background-color: #FFFF;
+        color: #2F2838;
+        padding: 5px 10px;
+        border-bottom: 2px solid #2F2838;
+        height: 100px;
+    }
+      
+    .logo-container {
+        width: 150px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        margin-left: 3%;
+        margin-right: 2%;
+    }
+      
+    .logo {
+        width: 100%;
+        height: auto;
+    }
+    
+    .menu-container {
+        display: flex;
+        margin-left: 20px;
+        margin-top: 45px;
+    }
+    
+    .Link {
+        text-decoration: none;
+        color: inherit;
+    }
+      
+    .menu-item {
+        margin-right: 10px;
+        cursor: pointer;
+        scroll-behavior: smooth;
+        text-decoration: none !important;
+        color: #2F2838;
+        font-size: 10px;
+    }
+    
+    .search-bar {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-top: 35px;
+        margin-right: 10px; 
+        width: 200px;
+        height: auto;
+      }
+      
+      .search-bar input[type="text"] {
+        padding: 1px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+        width: 70%;
+        height: 25px;
+        font-size: 10px;
+      }
+      
+      .search-bar button {
+        background-color: #555657;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 10px;
+        width: 30%;
+        height: 25px;
+      }
+    
+      .search-bar button:hover {
+        background-color: #2F2838;
+    }
+    
+    .icon-container{
+        margin-top: 35px;
+        margin-right: 5px;
+    }
+    
+    .icon-container .icon {
+        width: 15px;
+        height: 15px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    
+    .cart-indicator {
+        background-color: #2F2838;
+        color: white;
+        font-size: 10px;
+        border-radius: 50%;
+        padding: 2px 6px;
+        position: absolute;
+        top: 55px;
+        right: 82px;
+    }
+  }
