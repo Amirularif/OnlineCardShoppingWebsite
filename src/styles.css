@@ -486,7 +486,7 @@ button:hover {
         margin-left: 12px;
         margin-right: 12px;
         width: 150px;
-        height: 270px;   
+        height: 280px;   
     }
     
     .card:hover {
@@ -494,11 +494,11 @@ button:hover {
     }
       
     .card img {
-        width: 90px;
+        width: 100px;
         height: auto;
         object-fit: cover;
-        margin-left: 6%;
-        margin-top: 10%;
+        margin-left: 15%;
+        margin-top: 12%;
         margin-bottom: 10px;
     }
 
@@ -552,7 +552,7 @@ button:hover {
         margin-top: 10%;
         margin-right: 15%;
         font-family: 'TTBackward';
-        font-size: 15px;
+        font-size: 17px;
         font-weight: bold;
         text-align: right;
     }
@@ -569,7 +569,7 @@ button:hover {
         font-size: 8px;
         cursor: pointer;
         border-radius: 5px;
-        margin-top: -5px;
+        margin-top: -6px;
         margin-left: 10%;
     }
       
