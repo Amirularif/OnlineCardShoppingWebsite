@@ -12,22 +12,22 @@ function GradedCard({ id,title, name, description, stock, price, onAddToCart, im
   return (
     <div className="graded-card"> 
       <Link to={`/card/${id}`}>
-        <img src={require(`../images/graded/${image}`)} alt={name} className="card-image"/>
+        <img src={require(`../images/graded/${image}`)} alt={name} className="graded-card-image"/>
       </Link>
-      <div className="card-details">
-        <div className="name-container">
-          <p className="name">{title} {name} {rarity} {code} {set}</p>
+      <div className="graded-card-details">
+        <div className="graded-name-container">
+          <p className="graded-name">{title} {name} {rarity} {code} {set}</p>
         </div>
-        <div className="price-description-stock-container">
-          <div className="description-stock-container">
-            <p className="description">{description}</p>
-            <p className="stock">Stock: {stock}</p>
+        <div className="graded-price-description-stock-container">
+          <div className="graded-description-stock-container">
+            <p className="graded-description">{description}</p>
+            <p className="graded-stock">Stock: {stock}</p>
           </div>
-          <div className="price-container">
-            <p className="price">${price}</p>
+          <div className="graded-price-container">
+            <p className="graded-price">${price}</p>
           </div>
         </div>
-        <button className="addtocartbtn" onClick={handleAddToCart}>
+        <button className="graded-addtocartbtn" onClick={handleAddToCart}>
           Add to Cart
         </button>
       </div>
