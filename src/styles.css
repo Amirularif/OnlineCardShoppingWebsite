@@ -494,11 +494,11 @@ button:hover {
     }
       
     .card img {
-        width: 100px;
+        width: 95px;
         height: auto;
         object-fit: cover;
-        margin-left: 15%;
-        margin-top: 12%;
+        margin-left: 17%;
+        margin-top: 14%;
         margin-bottom: 10px;
     }
 
