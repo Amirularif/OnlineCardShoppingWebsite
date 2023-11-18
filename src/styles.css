@@ -486,7 +486,7 @@ button:hover {
         margin-left: 12px;
         margin-right: 12px;
         width: 150px;
-        height: 250px;   
+        height: 270px;   
     }
     
     .card:hover {
@@ -501,35 +501,36 @@ button:hover {
         margin-top: 10%;
         margin-bottom: 10px;
     }
-     
+
     .card-details {
         width: 145px;
         height: 100px;
+        padding: 2px;
     }
     
     .name-container{
-        height: 20%;
+        height: 25%;
     }
     
     .name-container .name{
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 4px;
+        margin-right: 4px;
         text-align: left;
-        font-size: 10px;
+        font-size: 9px;
         padding: 2px;
         font-weight: bolder;
     }
     
     .price-description-stock-container {
-        margin-top: 18px;
-        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 5px;
         padding: 2px;
         display: grid;
-        grid-template-columns: 130px 110px;
+        grid-template-columns: 70px 50px;
         justify-content: space-between;
-        height: 70px;
+        height: 35px;
     }
       
     .description-stock-container {
@@ -538,20 +539,20 @@ button:hover {
       }
       
     .description-stock-container  .description,.stock {
-        padding: 2px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        margin-left: 5px;
-        font-size: 15px;
+        padding: 1px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        margin-left: 4px;
+        font-size: 8px;
         text-align: left;
-        height: 20px;
+        height: 10px;
     }
       
     .card-details .price {
         margin-top: 10%;
         margin-right: 15%;
         font-family: 'TTBackward';
-        font-size: 17px;
+        font-size: 15px;
         font-weight: bold;
         text-align: right;
     }
@@ -561,15 +562,15 @@ button:hover {
         width: 80%;
         color: white;
         border: none;
-        padding: 10px 20px;
+        padding: 6px 12px;
         text-align: center;
         text-decoration: none;
         display: block;
-        font-size: 16px;
+        font-size: 8px;
         cursor: pointer;
         border-radius: 5px;
-        margin-top: 10px;
-        margin-left: 24px;
+        margin-top: -5px;
+        margin-left: 10%;
     }
       
     .card-details .addtocartbtn:hover {
