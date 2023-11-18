@@ -41,7 +41,7 @@ function CardDetail({ cardsData }) {
         .filter(
           (card) =>
           card.id !== parseInt(id)
-          ).slice(0, 4);
+          ).slice(0, 3);
       displayCards = sameCard.concat(fourrandomCard);
 
     } else if(similarCards.length === 2){
