@@ -201,3 +201,194 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 850px) {
+
+    .card-detail-container{
+        display: grid;
+        grid-template-columns: 35% 65%;
+        width: 70%;
+        height: 400px;
+        margin-top: 5%;
+        margin-left: 15%;
+        margin-right: 15%;
+        background-color: #F8F4F4; /* Grey section at the top */
+        border-radius: 10px;
+        border: 1px solid #D6D7DC;
+        overflow: hidden;
+    }
+    
+    .card-detail-left-container{
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    .card-detail-image{
+        width: 150px;
+        height: auto;
+    }
+    
+    .card-detail-right-container{
+        padding-top: 5%;
+        padding-left: 1%;
+        background-color: white;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-left: 1px solid #D6D7DC;
+    }
+    
+    .card-detail-name{
+        font-family: 'TTBackward';
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-left: 5%;
+        margin-right: 8%;
+    }
+    
+    .card-detail-description-and-buttons-container{
+        display: grid;  
+        grid-template-columns: 85% 10% 10%;
+        align-items: end;
+        margin-right: 11%;
+        margin-left: 5%;
+    }
+    
+    .card-detail-description-and-buttons-container .card-detail-description{
+        font-family: 'GlacialIndifference';
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin-bottom: 1%;
+    }
+    
+    .card-detail-description-and-buttons-container .like-button{
+        background-color: #5271FF;
+        color: white;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 5px;
+        cursor: pointer;
+        width: 90%;
+        height: 40%;
+        margin-right: 5%;
+    }
+    
+    .card-detail-description-and-buttons-container .share-button{
+        background-color: #B8B9BB;
+        color: black;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 5px;
+        cursor: pointer;
+        width: 90%;
+        height: 40%;
+        margin-left: 5%;
+    }
+    
+    .card-detail-stock{
+        font-family: 'GlacialIndifference';
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin-left: 5%;
+    }
+    
+    .card-detail-condition{
+        font-family: 'GlacialIndifference';
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin-left: 5%;
+    }
+    
+    .card-detail-price{
+        font-family: 'TTBackward';
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-left: 5%;
+    }
+    
+    .buttons-container{
+        margin-left: 2%;
+        margin-bottom: 5%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    
+    }
+    
+    .card-detail-addtocart-btn{
+        background-color: #E9E8E8;
+        width: 80%;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 8px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-left: 24px;
+    }
+    
+    .card-detail-addtocart-btn:hover {
+        background-color: #a3a1a1;
+    }
+    
+    .card-detail-buynow-btn{
+        background-color: #2F2838;
+        width: 80%;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 8px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-left: 24px;
+    }
+    
+    .card-detail-buynow-btn:hover {
+        background-color: #0a090c;
+    }
+    
+    .recommend-card-container{
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 10%;
+    }
+    
+    .recommend-card-title-container{
+        display: grid;
+        justify-content: space-around;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-right: 5%;
+        margin-left: 5%;
+        height: 100px;
+        border-bottom: 1px solid #D6D7DC;
+    }
+    
+    .recommend-card-title{
+        font-family: 'TTCommonPro';
+        font-size: 35px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    
+    .recommend-card-content-container{
+        display: flex;
+        justify-content: center;
+    }
+  }
