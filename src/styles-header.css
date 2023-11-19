@@ -125,7 +125,7 @@
     right: 82px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 850px) {
     .header {
         display: flex;
         align-items: center;
