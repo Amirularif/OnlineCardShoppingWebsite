@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import emptycarticon from '../icons/new cart.png'
 import TotalPrice from '../Components/totalprice';
 import Header from '../Components/header';
 import Footer from '../Components/footer';
@@ -21,6 +22,7 @@ function Cart({ cartItems, onRemoveFromCart }) {
             <div className="cart-container-itemcounttext">{cartItemCount}</div>
           </div>
           <div className="empty-cart-container">
+            <img  src={emptycarticon} alt="Cart Icon" className="empty-cart-icon"/>
             <p>Add item to view them in cart</p>
           </div>
           <div className="cart-total-price-container">
