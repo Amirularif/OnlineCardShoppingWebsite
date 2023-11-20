@@ -11,8 +11,29 @@ function Cart({ cartItems, onRemoveFromCart }) {
   const ShoppingCartText = "Shopping Cart";
   const cartItemCount = cartItems.reduce((total, item) => total + (multipliers[item.id] || 1), 0) + " items";
 
-  if (!cartItems) {
-    return <div className="cart-container">Cart is empty</div>;
+  if (!cartItems || cartItems.length === 0) {
+    console.log('cart is empty');
+    return (
+      <div className="App">
+        <Header />
+        <div className="cart-container">
+          <div className="cart-container-header">
+            <div className="cart-container-shoppingtext">{ShoppingCartText}</div>
+            <div className="cart-container-itemcounttext">{cartItemCount}</div>
+          </div>
+          <div className="empty-cart-container">
+            <p>Add item to view them in cart</p>
+          </div>
+          <div className="cart-total-price-container">
+            <div className="total-price">
+              <TotalPrice totalPrice={0} />
+            </div>
+            <button className="cart-total-checkout-btn">Checkout</button>
+          </div>
+        </div>
+        <Footer />
+      </div>
+    );
   }
 
   const handleRemoveClick = (item) => {
