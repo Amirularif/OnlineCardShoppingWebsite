@@ -12,7 +12,6 @@ function Cart({ cartItems, onRemoveFromCart }) {
   const cartItemCount = cartItems.reduce((total, item) => total + (multipliers[item.id] || 1), 0) + " items";
 
   if (!cartItems || cartItems.length === 0) {
-    console.log('cart is empty');
     return (
       <div className="App">
         <Header />

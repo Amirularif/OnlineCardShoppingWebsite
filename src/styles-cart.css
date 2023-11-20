@@ -417,4 +417,24 @@
         border-radius: 5px;
         z-index: 999; 
     }
+
+    .empty-cart-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 100%;
+        margin: auto;
+        background-color: #f2f2f2; 
+        border: 1px solid #D6D7DC; 
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+      
+    .empty-cart-container p {
+        font-family: 'TTCommonPro';
+        font-size: 18px; 
+        text-align: center;
+        color: #2F2838; 
+    }
   }
