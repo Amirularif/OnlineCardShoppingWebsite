@@ -1,7 +1,8 @@
-# OnlineCardShoppingWebsite
-Online Pokemon Card Shopping Website developed using React for users who wants to buy either singles, graded or booster boxes
+# E-commerce Website (Pokemon Card) with ReactJS 
+Developed a responsive Online Pokemon Card e-commerce website featuring a shopping cart functionality using React.js. The application allows users to view, add, and remove items from the cart, with real-time price updates. Implemented a dynamic checkout system and integrated a responsive design for optimal user experience across various devices.
 
 # Platform used
-+ React framework
++ ReactJS
 * JavaScript
 - CSS
++ HTML
