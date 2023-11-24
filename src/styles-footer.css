@@ -96,30 +96,14 @@
 }
 
 @media (max-width: 850px) {
-    .footer-container{
-        background-color:#2F2838;
-        border-top: 1px solid #D6D7DC;
-        padding-bottom: 2%;
-        width: auto;
-    }
     
     .footer-title-container{
-        display: flex;
-        justify-content: center;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 1%;
-        border-bottom: 1px solid #D6D7DC;
         height: 60px;
-        align-items: center;
     }
     
     .footer-title{
-        justify-self: center;
-        font-family: 'TTCommonPro';
         font-size: 15px;
         letter-spacing: 1px;
-        color: azure;
     }
     
     .footer-columns{
@@ -129,46 +113,22 @@
         margin-right: 12%;
         margin-top: 2%;
     }
-    
-    .footer-column{
-        justify-self: center;
-    }
-    
+
     .footer-column-title{
-        color: white;
-        font-family: 'TTCommonPro';
         font-size: 10px;
         font-weight: bold;
         letter-spacing: 1px;
         margin-top: 4%;
     }
     
-    .footer-column-description-container{
-        display: flex;
-        margin-right: 45%;
-    }
-    
     .footer-column-description{
-        text-align: left;
-        color: white;
-        font-family: 'TTCommonPro';
         font-size: 8px;
-        font-weight: lighter;
         letter-spacing: 1px;
         margin-top: 3%;
     }
     
-    .social-icons-container{
-        display: flex;
-        margin-left: 30%;
-        margin-right: 30%;
-        margin-top: 3%;
-        justify-content: center;
-    }
-    
     .social-icons-container .icon{
         width: 6%;
-        height: auto;
         margin-left: 3%;
         margin-right: 3%;
     }
