@@ -309,40 +309,26 @@ button:hover {
 }
 
 @media (max-width: 850px) {
-
-    body {
-        font-family: Arial, sans-serif;
-        scroll-behavior: smooth;
-    }
      
     .autobiography-section {
-        display: flex;
         height: 200px;
         width: 100%;
-        background-color: #f2f2f2;
         padding: 10px;
-        justify-content: space-between;
-        align-items: center;
         border-bottom: 2px solid #2F2838;
     }
     
     .autobiography-text {
         width: 40%;
-        text-align: center;
         margin-left: 70px;
     }
     
     .autobio-header{
-        font-family: "Wanoquin";
         font-size: 25px;
-        color: #2F2838;
         padding: 5px;
         border-bottom: 1px solid #2F2838;
     }
     
     .autobio-description{
-        font-family: "TTCommonPro";
-        color: #2F2838;
         margin-top: 10px;
         padding-left: 20px;
         padding-right: 20px;
@@ -351,10 +337,7 @@ button:hover {
     }
     
     .autobio-code{
-        font-family: "TTBackward";
         font-size: 20px;
-        font-weight: bold;
-        color: #2F2838;
         margin-top: 20px;
     }
       
@@ -370,7 +353,6 @@ button:hover {
         padding: 5px;
         display: grid;
         grid-template-columns: 20% 80%;
-        justify-content: space-between;
     }
       
     .filter-container {
@@ -381,38 +363,27 @@ button:hover {
     }
     
     .filter-header {
-        font-family: "GlacialIndifference";
         font-size: 10px;
-        font-weight: bold;
         letter-spacing: 3px;
-        color: #343333;
         margin-top: 10px;
         margin-bottom: 15px;
         margin-left: 5px;
     }
     
     .filter-group{
-        text-align: left;
-        border-top: 1px solid #D6D7DC;
         margin: 5px;
         padding: 5px;
     }
     
     .filter-title{
-        font-family: "GlacialIndifference";
         font-size: 10px;
         margin-left: 5px;
         font-weight: bold;
         letter-spacing: 1px;
-        color: #343333;
         margin-top: 10px;
     }
     
     .filter-item{
-        display: grid;
-        grid-template-columns: 80% 20%;
-        justify-content:space-evenly;
-        font-family: "GlacialIndifference";
         font-size: 8px;
         letter-spacing: 1px;
         color: #525151;
@@ -420,40 +391,24 @@ button:hover {
     }
     
     .toggle-switch {
-        position: relative;
-        display: inline-block;
         width: 21px;
         height: 12px;
     }
       
-    .toggle-switch input {
-        display: none;
-    }
-      
     .toggle-switch .slider {
-        position: absolute;
-        cursor: pointer;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #ccc;
         transition: 0.4s;
         border-radius: 34px;
     }
       
-    .toggle-switch input:checked + .slider {
-        background-color: #343333;
-    }
-      
     .toggle-switch .slider::before {
-        position: absolute;
-        content: "";
         height: 8px;
         width: 8px;
         left: 2px;
         bottom: 2px;
-        background-color: white;
         transition: 0.4s;
         border-radius: 50%;
     }
@@ -463,24 +418,12 @@ button:hover {
     }
     
     .card-container {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
         padding: 15px;
         margin-left: 10px;
         margin-bottom: 10%;
     }
       
     .card {
-        display: grid;
-        justify-content: center;
-        background-color: #F8F4F4; 
-        border-radius: 10px;
-        border: 1px solid #D6D7DC;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-        overflow: hidden; /* Clip rounded corners */
-        position: relative;
         margin-top: 15px;
         margin-bottom: 15px;
         margin-left: 12px;
@@ -488,15 +431,9 @@ button:hover {
         width: 150px;
         height: 280px;   
     }
-    
-    .card:hover {
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    }
       
     .card img {
         width: 95px;
-        height: auto;
-        object-fit: cover;
         margin-left: 17%;
         margin-top: 14%;
         margin-bottom: 10px;
@@ -517,26 +454,17 @@ button:hover {
         margin-bottom: 5px;
         margin-left: 4px;
         margin-right: 4px;
-        text-align: left;
         font-size: 9px;
         padding: 2px;
-        font-weight: bolder;
     }
     
     .price-description-stock-container {
         margin-top: 10px;
         margin-bottom: 5px;
         padding: 2px;
-        display: grid;
         grid-template-columns: 70px 50px;
-        justify-content: space-between;
         height: 35px;
     }
-      
-    .description-stock-container {
-        display: flex;
-        flex-direction: column;
-      }
       
     .description-stock-container  .description,.stock {
         padding: 1px;
@@ -544,51 +472,27 @@ button:hover {
         margin-bottom: 2px;
         margin-left: 4px;
         font-size: 8px;
-        text-align: left;
         height: 10px;
     }
       
     .card-details .price {
         margin-top: 10%;
         margin-right: 15%;
-        font-family: 'TTBackward';
         font-size: 17px;
-        font-weight: bold;
-        text-align: right;
     }
       
     .card-details .addtocartbtn {
-        background-color: #2F2838;
         width: 80%;
-        color: white;
-        border: none;
         padding: 6px 12px;
-        text-align: center;
-        text-decoration: none;
-        display: block;
         font-size: 8px;
-        cursor: pointer;
         border-radius: 5px;
         margin-top: -6px;
         margin-left: 10%;
-    }
-      
-    .card-details .addtocartbtn:hover {
-        background-color: #0a090c;
-    }
-      
-    button:hover {
-        background-color: #2F2838;
     }
     
     .success-message {
         position: fixed;
         top: 15px;
         right: 15px;
-        background-color: rgba(30, 31, 30, 0.8);
-        color: white;
-        padding: 10px;
-        border-radius: 5px;
-        z-index: 999; /* Ensure the message appears above other elements */
     }
   }
