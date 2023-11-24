@@ -127,11 +127,6 @@
 
 @media (max-width: 850px) {
     .header {
-        display: flex;
-        align-items: center;
-        justify-content:left;
-        background-color: #FFFF;
-        color: #2F2838;
         padding: 5px 10px;
         border-bottom: 2px solid #2F2838;
         height: 80px;
@@ -139,10 +134,6 @@
       
     .logo-container {
         width: 150px;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin-top: 40px;
         margin-left: 3%;
         margin-right: 2%;
@@ -158,25 +149,13 @@
         margin-left: 20px;
         margin-top: 45px;
     }
-    
-    .Link {
-        text-decoration: none;
-        color: inherit;
-    }
       
     .menu-item {
         margin-right: 10px;
-        cursor: pointer;
-        scroll-behavior: smooth;
-        text-decoration: none !important;
-        color: #2F2838;
         font-size: 10px;
     }
     
     .search-bar {
-        display: flex;
-        align-items: center;
-        margin-left: auto;
         margin-top: 35px;
         margin-right: 10px; 
         width: 200px;
@@ -194,19 +173,12 @@
       }
       
       .search-bar button {
-        background-color: #555657;
-        color: white;
-        border: none;
         padding: 5px 10px;
         cursor: pointer;
         font-size: 10px;
         width: 30%;
         height: 25px;
       }
-    
-      .search-bar button:hover {
-        background-color: #2F2838;
-    }
     
     .icon-container{
         margin-top: 35px;
