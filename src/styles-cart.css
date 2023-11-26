@@ -235,10 +235,9 @@
     margin-top: 5px;
 }
 
+
 @media (max-width: 850px) {
     .cart-container{
-        display: flex;
-        flex-direction: column;
         height: 100%;
         justify-content: right;
         margin-left: 15%;
@@ -247,14 +246,8 @@
     }   
     
     .cart-container-header{
-        display: flex;
-        justify-content: space-between;
-        font-family: 'GlacialIndifference';
         font-size: 25px;
-        font-weight: bold;
-        color: #2F2838;
         padding: 5px;
-        border-bottom: 1px solid #D6D7DC;
         margin-top: 2%;
         padding-bottom: 10px;
     }
@@ -266,10 +259,8 @@
         height: auto;
         margin-top: 2%;
         margin-bottom: 20px;
-        background-color: #F8F4F4; /* Grey section at the top */
         border-radius: 10px;
         border: 1px solid #D6D7DC;
-        overflow: hidden;
     }
     
     .cart-item-left-container{
@@ -287,15 +278,8 @@
         margin: 2%;
     }
     
-    .cart-item-middleleft-container{
-        height: 100%;
-        background-color: white; 
-        border-left: 1px solid #D6D7DC;
-    }
-    
     .cart-item-middleright-container{
         height: 100%;
-        background-color: white;
         display: flex;
         align-items: flex-start;
     }
@@ -307,7 +291,6 @@
     
     .cart-item-dropdown{
         width: 40px;
-        font-family: 'GlacialIndifference';
         font-size: 15px;
     }
     
@@ -317,140 +300,54 @@
     }
     
     .cart-items-name-description .name{
-        font-family: 'TTBackward';
         font-weight: bold;
         font-size: 20px;
-        letter-spacing: 1px;
-        margin-bottom: 2%;
     }
     
     .cart-items-name-description .description{
-        font-family: 'GlacialIndefference';
         font-size: 15px;
-        letter-spacing: 1px;
-        margin-top: 2%;
     }
     
     .cart-items-name-description .condition{
-        font-family: 'GlacialIndefference';
         font-size: 15px;
-        letter-spacing: 1px;
-        margin-top: 2%;
     }
     
     .cart-items-name-description .price{
-        font-family: 'GlacialIndefference';
         font-size: 15px;
-        font-weight: bold;
-        letter-spacing: 1px;
-        margin-top: 2%;
-    }
-    
-    .cart-items-right-container{
-        height: 100%;
-        background-color: white; 
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
     }
     
     .cart-item-price{
         margin-top: 38%;
         margin-left: 10%;
-        font-family: 'TTBackward';
-        font-weight: bold;
         font-size: 32px;
-        letter-spacing: 1px;
     }
     
     .cart-item-remove-button{
-        background-color: #343333;
-        color: white;
         font-size: 10px;
         border-radius: 30%;
         margin-left: 70%;
         margin-top: 10%;
         justify-self: flex-end;
-        cursor: pointer;
-    }
-    
-    .cart-item-remove-button:hover {
-        background-color: #080808;
-    }
-    
-    .cart-total-price-container{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: flex-end;
-        align-self: flex-end;
-        align-items: flex-end;
-        margin-bottom: 2%;
     }
     
     .cart-total-price-container .total-price{
         margin-top: 10px;
         margin-right: 20px;
         margin-bottom: 10px;
-        font-family: 'GlacialIndifference';
         font-size: 20px;
-        font-weight: bold;
-    }
-    
-    .cart-total-checkout-btn{
-        background-color: #2F2838;
-        width: 22%;
-        color: white;
-        border: none;
-        padding: 10px 15px;
-        text-align: center;
-        text-decoration: none;
-        display: block;
-        font-size: 10px;
-        cursor: pointer;
-        border-radius: 5px;
-        margin-top: 10px;
-        margin-right: 20px;
-    }
-    
-    .cart-total-checkout-btn:hover {
-        background-color: #0a090c;
-    }
-    
-    .success-message {
-        position: fixed;
-        top: 15px;
-        right: 15px;
-        background-color: rgba(30, 31, 30, 0.8);
-        color: white;
-        padding: 10px;
-        border-radius: 5px;
-        z-index: 999; 
     }
 
     .empty-cart-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 300px;
-        width: 100%;
-        margin: auto;
-        background-color: #f2f2f2; 
-        border: 1px solid #D6D7DC; 
-        margin-top: 2%;
-        margin-bottom: 2%;
+        height: 250px;
     }
 
     .empty-cart-icon{
-        width: 20%;
+        width: 10%;
         height: auto;
-        margin-bottom: 5%;
+        margin-bottom: 1%;
     }
       
     .empty-cart-container p {
-        font-family: 'TTCommonPro';
         font-size: 18px; 
-        text-align: center;
-        color: #2F2838; 
     }
   }
