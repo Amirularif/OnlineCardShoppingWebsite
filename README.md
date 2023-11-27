@@ -8,7 +8,7 @@ Developed a responsive Online Pokemon Card e-commerce website featuring a shoppi
 - CSS
 + HTML
 
-# Function of the Web Application
+# Function of the Website
 
 1. **Main Page** : The Main Page serves as the central hub of the website. It includes the Header, Content, and Footer components. Users land on this page, where they can seamlessly navigate through the product catalog presented in the form of cards. Each card represents a product, showcasing key details.
 
