@@ -10,8 +10,8 @@ Developed a responsive Online Pokemon Card e-commerce website featuring a shoppi
 
 # Function of the Web Application
 
-1. **Main Page**: The homepage for the website, consisting of the header, content, and footer component. This is where the user can view all the products (cards) and add them to their cart. 
+1. **Main Page** : The Main Page serves as the central hub of the website. It includes the Header, Content, and Footer components. Users land on this page, where they can seamlessly navigate through the product catalog presented in the form of cards. Each card represents a product, showcasing key details.
 
-2. **Card Detail Page**: When the user clicks on the respective card, they will be directed here. here they can view more information about the cards and even get recommended other cards as well
+2. **Card Detail Page** : The Card Detail Page is an interactive space users land on when they click on a specific product card. This page provides in-depth information about the selected product and offers recommendations for related items.
 
-3. **Shopping Cart**: Users can view the products they added into their cart by simply clicking the cart icon located on the top left of the page
+3. **Shopping Cart** : The Shopping Cart page is a user-friendly space that consolidates all selected products. Users can easily access this page by clicking on the cart icon, typically located on the top left of the website.
