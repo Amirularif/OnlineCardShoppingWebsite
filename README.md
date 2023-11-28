@@ -15,3 +15,8 @@ Developed a responsive Online Pokemon Card e-commerce website featuring a shoppi
 2. **Card Detail Page** : The Card Detail Page is an interactive space users land on when they click on a specific product card. This page provides in-depth information about the selected product and offers recommendations for related items.
 
 3. **Shopping Cart** : The Shopping Cart page is a user-friendly space that consolidates all selected products. Users can easily access this page by clicking on the cart icon, typically located on the top left of the website.
+
+# Screenshots
+## Main Page
+## Card Detail Page
+## Shopping cart Page
