@@ -18,6 +18,8 @@ Developed a responsive Online Pokemon Card e-commerce website featuring a shoppi
 
 # Screenshots
 ## Main Page
++ **Product display** : *The main content section displays an array of product cards, each featuring essential information such as product image, name, and price*
+* **Add to cart** : *Users can easily add desired products to their shopping cart directly from the Main Page*
 <img src="https://github.com/Amirularif/OnlineCardShoppingWebsite/assets/57553676/1f484998-4e26-4649-85e9-44fc3b9ef29d" width="700" height=auto>
 <img src="https://github.com/Amirularif/OnlineCardShoppingWebsite/assets/57553676/6202a906-2db0-4154-b813-60717f525edc" width="700" height=auto>
 <img src="https://github.com/Amirularif/OnlineCardShoppingWebsite/assets/57553676/100972aa-fc6a-4b12-9f24-aeb218845b3a" width="700" height=auto>
