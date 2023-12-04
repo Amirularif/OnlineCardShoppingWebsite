@@ -34,7 +34,7 @@ https://github.com/Amirularif/OnlineCardShoppingWebsite/assets/57553676/089365b3
 <img src="https://github.com/Amirularif/OnlineCardShoppingWebsite/assets/57553676/ae9609ad-8875-48fd-a059-91f317fca864" width="700" height=auto>
 
 ## Shopping cart Page
-+ **Cart Overview** : *Users get a summarized view of the products they've added to their cart, including images, names, quantities, and prices*
++ **Cart Overview** : *Users get a summarized view of the products they've added to their cart, including images, names, conditions, quantities, and prices*
 * **Quantity Adjustment** : *Users can modify the quantity of each item directly from the cart*
 - **Remove Items** : *A straightforward process to remove unwanted items from the cart*
 + **Price Update** : *Real-time updates on the total price as users make changes*
